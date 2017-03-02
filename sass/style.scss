@@ -1,3 +1,39 @@
-// @import "color";
+@import "color";
 // @import "font";
-// @import "text";
+@import "size";
+
+.red-bg{
+   background-color: $red;
+   height: 100%;
+   width: 50%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   float: left;
+   color: $white;
+}
+.grey-bg{
+   background-color: $grey;
+   height: 100%;
+}
+.white-bg{
+   background-color: $white;
+   height: 100%;
+   width: 50%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   float: left;
+   color: $black;
+}
+.black-bg{
+   background-color: $black;
+   height: 100%;
+}
+
+.hidden {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+   opacity: 0 !important;
+}

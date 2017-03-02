@@ -1,0 +1,33 @@
+.red-bg {
+  background-color: #ed1c24;
+  height: 100%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  color: #fff; }
+
+.grey-bg {
+  background-color: #292929;
+  height: 100%; }
+
+.white-bg {
+  background-color: #fff;
+  height: 100%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  color: #000; }
+
+.black-bg {
+  background-color: #000;
+  height: 100%; }
+
+.hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  opacity: 0 !important; }
