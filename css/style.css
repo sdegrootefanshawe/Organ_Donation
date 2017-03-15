@@ -1,3 +1,11 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase; }
+
 .red-bg {
   background-color: #ed1c24;
   height: 100%;
@@ -7,10 +15,6 @@
   border: 0;
   float: left;
   color: #fff; }
-
-.grey-bg {
-  background-color: #292929;
-  height: 100%; }
 
 .white-bg {
   background-color: #fff;
@@ -22,6 +26,10 @@
   float: left;
   color: #000; }
 
+.grey-bg {
+  background-color: #292929;
+  height: 100%; }
+
 .black-bg {
   background-color: #000;
   height: 100%; }
@@ -31,3 +39,16 @@
   top: -9999px !important;
   left: -9999px !important;
   opacity: 0 !important; }
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/heart.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  header a {
+    color: #000; }
+    header a:hover {
+      color: #000; }
+  header .banner-link span {
+    color: #ed1c24; }

@@ -1,42 +1,70 @@
-@import "color";
-// @import "font";
+@import "color"; // @import "font";
 @import "size";
+@import "text";
 
-.red-bg{
-   background-color: $red;
-   height: 100%;
-   width: 50%;
-   margin: 0;
-   padding: 0;
-   border: 0;
-   float: left;
-   color: $white;
+.cutout-text {
+
 }
 
-.grey-bg{
-   background-color: $grey;
-   height: 100%;
+.red-bg {
+    background-color: $red;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    color: $white;
 }
 
-.white-bg{
-   background-color: $white;
-   height: 100%;
-   width: 50%;
-   margin: 0;
-   padding: 0;
-   border: 0;
-   float: left;
-   color: $black;
+.white-bg {
+    background-color: $white;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    color: $black;
 }
 
-.black-bg{
-   background-color: $black;
-   height: 100%;
+.grey-bg {
+    background-color: $grey;
+    height: 100%;
+}
+
+.black-bg {
+    background-color: $black;
+    height: 100%;
 }
 
 .hidden {
-   position: absolute !important;
-   top: -9999px !important;
-   left: -9999px !important;
-   opacity: 0 !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    opacity: 0 !important;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/heart.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    a {
+        color: $black;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    .banner-head {}
+
+    .banner-link {
+        span {
+            color: $red;
+        }
+    }
 }
