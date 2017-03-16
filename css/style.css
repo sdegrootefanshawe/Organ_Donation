@@ -1,54 +1,70 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: uppercase; }
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+.pop {
+    opacity: 0;
+}
 
 .red-bg {
-  background-color: #ed1c24;
-  height: 100%;
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  float: left;
-  color: #fff; }
+    background-color: #ed1c24;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    color: #fff;
+}
 
 .white-bg {
-  background-color: #fff;
-  height: 100%;
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  float: left;
-  color: #000; }
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    color: #000;
+}
 
 .grey-bg {
-  background-color: #292929;
-  height: 100%; }
+    background-color: #292929;
+    height: 100%;
+}
 
 .black-bg {
-  background-color: #000;
-  height: 100%; }
+    background-color: #000;
+    height: 100%;
+}
 
 .hidden {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-  opacity: 0 !important; }
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    opacity: 0 !important;
+}
 
 header {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/heart.jpg");
-  background-size: contain;
-  background-repeat: no-repeat; }
-  header a {
-    color: #000; }
-    header a:hover {
-      color: #000; }
-  header .banner-link span {
-    color: #ed1c24; }
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/heart.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header a {
+    color: #000;
+}
+
+header a:hover {
+    color: #000;
+}
+
+header .banner-link span {
+    color: #ed1c24;
+}
+
+.grey-container {
+    background-color: #292929;
+}

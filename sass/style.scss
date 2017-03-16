@@ -2,8 +2,8 @@
 @import "size";
 @import "text";
 
-.cutout-text {
-
+.pop {
+    opacity: 0;
 }
 
 .red-bg {
@@ -67,4 +67,8 @@ header {
             color: $red;
         }
     }
+}
+
+.grey-container {
+    background-color: $grey;
 }
