@@ -1,6 +1,6 @@
-@import "color"; // @import "font";
-@import "size";
+@import "color";
 @import "text";
+@import "spacing";
 
 .pop {
     opacity: 0;
@@ -46,11 +46,15 @@
 }
 
 header {
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/heart.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    // width: 100%;
+    // background-image: url("../images/heart_text.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    h2 {
+        font-family: $bebasbold;
+        font-size: $xlarge-head;
+        line-height: $header-line-height;
+    }
 
     a {
         color: $black;
@@ -60,7 +64,19 @@ header {
         }
     }
 
-    .banner-head {}
+    .banner-type {
+        padding-top: $padding-v-xxlarge;
+        padding-bottom: $padding-v-xxlarge;
+    }
+
+    .banner-head {
+        span {
+            color: $white;
+            background-color: $black;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
 
     .banner-link {
         span {
@@ -71,4 +87,42 @@ header {
 
 .grey-container {
     background-color: $grey;
+}
+
+.map {
+    color: $white;
+
+    span {
+      color: $red;
+    }
+
+    h3 {
+      padding-top: $padding-v-large;
+      padding-bottom: $padding-v-large;
+        font-family: $bebasbook;
+        font-size: 100px;
+        line-height: 1;
+        padding-left: 7%;
+        span {
+            font-family: $bebasregular;
+        }
+    }
+    p {
+      padding-left: 7%;
+    }
+
+}
+
+.half-half {
+  h3 {
+    font-family: $bebasbook;
+    font-size: 150px;
+    line-height: 1;
+    padding-left: 7%;
+    padding-top: $padding-v-large;
+    padding-bottom: $padding-v-large;
+    span {
+        font-family: $bebasregular;
+    }
+  }
 }
