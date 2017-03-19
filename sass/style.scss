@@ -93,36 +93,68 @@ header {
     color: $white;
 
     span {
-      color: $red;
+        color: $red;
     }
 
     h3 {
-      padding-top: $padding-v-large;
-      padding-bottom: $padding-v-large;
+        padding-top: $padding-v-large;
+        padding-bottom: $padding-v-large;
         font-family: $bebasbook;
         font-size: 100px;
         line-height: 1;
         padding-left: 7%;
+
         span {
             font-family: $bebasregular;
         }
     }
-    p {
-      padding-left: 7%;
-    }
 
+    p {
+        padding-left: 7%;
+    }
 }
 
 .half-half {
-  h3 {
-    font-family: $bebasbook;
-    font-size: 150px;
-    line-height: 1;
-    padding-left: 7%;
-    padding-top: $padding-v-large;
-    padding-bottom: $padding-v-large;
-    span {
-        font-family: $bebasregular;
+    h3 {
+        font-family: $bebasbook;
+        font-size: 150px;
+        line-height: 1;
+        padding-left: 7%;
+        padding-top: $padding-v-large;
+        padding-bottom: $padding-v-large;
+
+        span {
+            font-family: $bebasregular;
+        }
     }
-  }
+}
+
+.donor-card {
+    color: $white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: $padding-v-medium;
+
+    div {
+        padding-top: $padding-v-medium;
+        padding-bottom: $padding-v-medium;
+
+        img {
+            max-width: 700px;
+        }
+
+        h3 {
+            font-family: $bebasbook;
+            font-size: 140px;
+            line-height: 1;
+
+            span {
+                font-family: $bebasregular;
+            }
+        }
+    }
+
+    h5 {
+        color: $red;
+    }
 }
