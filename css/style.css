@@ -136,3 +136,12 @@ header .banner-link span {
         font-family: "bebasregular"; }
   .donor-card h5 {
     color: #ed1c24; }
+
+#anatomyguy {
+  max-width: 600px; }
+
+.the-organs {
+  transform-origin: center; }
+
+#organ {
+  color: red; }
