@@ -4,6 +4,10 @@ h3,
 h4 {
   text-transform: uppercase; }
 
+h3 {
+  font-size: 100px;
+  line-height: 1; }
+
 @font-face {
   font-family: bebasthin;
   src: url("../fonts/BebasNeueThin.otf");
@@ -130,18 +134,51 @@ header .banner-link span {
       max-width: 700px; }
     .donor-card div h3 {
       font-family: "bebasbook";
-      font-size: 140px;
+      font-size: 125px;
       line-height: 1; }
       .donor-card div h3 span {
         font-family: "bebasregular"; }
   .donor-card h5 {
     color: #ed1c24; }
 
-#anatomyguy {
-  max-width: 600px; }
+.anatomy {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 50px;
+  margin-bottom: -45px; }
+  .anatomy h3 {
+    font-family: "bebasbold";
+    font-size: 160px;
+    line-height: 1; }
+  .anatomy #anatomyguy {
+    max-width: 600px; }
+  .anatomy .the-organs {
+    transform-origin: center; }
+  .anatomy #organ {
+    color: red; }
 
-.the-organs {
-  transform-origin: center; }
-
-#organ {
-  color: red; }
+.eight-lives {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .eight-lives h3 {
+    font-family: "bebasregular";
+    font-size: 120px;
+    color: #fff; }
+    .eight-lives h3 span {
+      font-family: "bebasbold";
+      color: #ed1c24; }
+  .eight-lives .guy {
+    max-width: 12%;
+    max-height: 400px; }
+  .eight-lives #guy1,
+  .eight-lives #guy2,
+  .eight-lives #guy3,
+  .eight-lives #guy4,
+  .eight-lives #guy5,
+  .eight-lives #guy6,
+  .eight-lives #guy7,
+  .eight-lives #guy8 {
+    opacity: 0; }
+  .eight-lives #guy9 {
+    position: absolute;
+    left: 30px; }

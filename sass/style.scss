@@ -145,7 +145,7 @@ header {
 
         h3 {
             font-family: $bebasbook;
-            font-size: 140px;
+            font-size: 125px;
             line-height: 1;
 
             span {
@@ -159,13 +159,63 @@ header {
     }
 }
 
-#anatomyguy {
-  max-width: 600px;
-}
-.the-organs {
-transform-origin:center;
+.anatomy {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: $padding-v-medium;
+  margin-bottom: -45px;
+  h3 {
+      font-family: $bebasbold;
+      font-size: 160px;
+      line-height: 1;
+  }
+
+    #anatomyguy {
+        max-width: 600px;
+    }
+
+    .the-organs {
+        transform-origin: center;
+    }
+
+    #organ {
+        color: red;
+    }
 }
 
-#organ {
-  color: red;
+.eight-lives {
+  padding-top: $padding-v-large;
+  padding-bottom: $padding-v-large;
+
+  h3 {
+    font-family: $bebasregular;
+    font-size: 120px;
+    color: $white;
+
+    span {
+      font-family: $bebasbold;
+      color: $red;
+    }
+  }
+
+  .guy {
+    max-width: 12%;
+    max-height: 400px;
+  }
+
+  #guy1,
+  #guy2,
+  #guy3,
+  #guy4,
+  #guy5,
+  #guy6,
+  #guy7,
+  #guy8 {
+    opacity: 0;
+  }
+
+  #guy9 {
+    position: absolute;
+    left: 30px;
+  }
 }
