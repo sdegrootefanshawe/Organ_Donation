@@ -6,8 +6,12 @@
     <title>Organ Donation Ontario</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
-    <script src="greensock/src/minified/TweenMax.min.js"></script>
     <link rel="stylesheet" href="css/foundation.css" />
+    <script src="greensock/src/minified/TweenMax.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/DrawSVGPlugin.min.js"></script>
+    <script src="js/ScrambleTextPlugin.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +41,7 @@
                 <p>This is an <span>awareness</span> issue.</p>
             </div>
             <div class="mapsvg small-6 float-right column">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
   .st0{fill:#cccccc;}
   .st1{fill:#F0EFEF;}
@@ -286,9 +290,41 @@
     <section class="half-half">
         <h2 class="hidden">Ontario needs organ donors</h2>
         <div class="row expanded collapse">
-            <div class="red-bg small-12 medium-6 column">
-                <h3>Ontario<br>needs<br><span>organ<br>donors</span></h3></div>
-            <div class="white-bg small-12 medium-6 column"></div>
+            <div class="red-bg small-12 large-6 column">
+                <h3>Ontario needs <span>organ donors</span></h3></div>
+            <div class="white-bg small-12 large-6 column crcl">
+                <div class="circle-text-container text-center float-center">
+                    <div id="firstText" class="circle-text">
+                        <p>of <span id="million">13.6</span> million<br><span class="roboto">total ontarians</span></p>
+                    </div>
+                    <div id="secondText" class="circle-text">
+                        <p><span id="firstPerc">85</span>% <span class="roboto">are in<br>favour of</span><br>organ donation</p>
+                    </div>
+                    <div id="thirdText" class="circle-text">
+                        <p><span id="percent">30</span>%<span class="roboto"> are registered</span><br>organ donors</p>
+                    </div>
+
+                    <div id="fourthText" class="circle-text">
+                        <p><span id="secondCirclNum">270</span> Ontarians<br><span class="roboto">die everyday</span></p>
+                    </div>
+                    <div id="fifthText" class="circle-text">
+                        <p><span id="secondCirclNum2">70</span>% <span class="roboto">would have<br> their organs</span><br> buried with them.</p>
+                    </div>
+                    <div id="sixthText" class="circle-text">
+                        <p><span id="secondCirclNum3">35</span>% of family’s<br>choose to<br><span class="roboto">not donate</span></p>
+                    </div>
+                </div>
+                <div class="circle-container">
+                <svg version="1.1" id="circleGraph1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 130.7 122.8" style="enable-background:new 0 0 130.7 122.8;" xml:space="preserve">
+              <style type="text/css">
+              	.st0000{fill:none;stroke:#ED1C24;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+              	.st1111{fill:none;stroke:#42D4B6;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+              </style>
+              <path id="outer1" class="st0000" d="M64.2,11.1c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50c0-26.8,21.1-48.7,47.6-49.9"/>
+              <path id="inner1" class="st1111" d="M63.9,20.1c23.2,0,42,18.8,42,42s-18.8,42-42,42s-42-18.8-42-42c0-22.5,17.6-40.8,39.8-42"/>
+              </svg>
+              </div>
+            </div>
         </div>
     </section>
 
@@ -300,21 +336,17 @@
         </div>
 
         <h5>The good news?</h5>
-        <p>Registering has never been so easy.<br>
-        Anyone over the age of 16 can register.<br>
-        Registering takes 2 minutes. (Yes, we timed it!)<br>
-        You can register online, or in person at a ServiceOntario centre.</p>
+        <p>Registering has never been so easy.<br> Anyone over the age of 16 can register.<br> Registering takes 2 minutes. (Yes, we timed it!)<br> You can register online, or in person at a ServiceOntario centre.</p>
     </section>
 
     <section class="anatomy row expanded collapse">
         <h2 class="hidden">Anatomical Interaction</h2>
         <div>
-    <h3 class="text-center column">ask me about my <span id="organ">heart</span></h3>
-    <p class="text-center column" id="info">Hearts donated for heart valves repair birth defects in children and others.</p>
-  </div>
-  <div class="text-center column">
-  <svg version="1.1" id="anatomyguy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+            <h3 class="text-center column">ask me about my <span id="organ">heart</span></h3>
+            <p class="text-center column" id="info">Hearts donated for heart valves repair birth defects in children and others.</p>
+        </div>
+        <div class="text-center column">
+            <svg version="1.1" id="anatomyguy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
   <style type="text/css">
     .st00{fill:#FFCF8B;stroke:#EAA468;stroke-width:3;stroke-miterlimit:10;}
     .st11{fill:none;stroke:#EAA468;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
@@ -1132,16 +1164,15 @@
   </svg>
 
 
-  </div>
+        </div>
     </section>
 
     <section class="grey-container eight-lives">
         <h2 class="hidden">One person can save up to eight lives</h2>
         <div class="row expanded collapse">
-          <div class="text-center column">
-            <h3>one donor can save up to <span>8 lives.</span></h3>
-  <svg version="1.1" id="guy1" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+            <div class="text-center column">
+                <h3>one donor can save up to <span>8 lives.</span></h3>
+                <svg version="1.1" id="guy1" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1151,8 +1182,7 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  <svg version="1.1" id="guy2" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+                <svg version="1.1" id="guy2" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1162,8 +1192,7 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  <svg version="1.1" id="guy3" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+                <svg version="1.1" id="guy3" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1173,8 +1202,7 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  <svg version="1.1" id="guy4" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+                <svg version="1.1" id="guy4" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1184,8 +1212,7 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  <svg version="1.1" id="guy5" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+                <svg version="1.1" id="guy5" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1195,8 +1222,7 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  <svg version="1.1" id="guy6" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+                <svg version="1.1" id="guy6" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1206,8 +1232,7 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  <svg version="1.1" id="guy7" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+                <svg version="1.1" id="guy7" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1217,8 +1242,7 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  <svg version="1.1" id="guy8" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+                <svg version="1.1" id="guy8" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1228,8 +1252,7 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  <svg version="1.1" id="guy9" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
+                <svg version="1.1" id="guy9" class="guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 140 400" style="enable-background:new 0 0 140 400;" xml:space="preserve">
   <style type="text/css">
     .st000{fill:#eeba05;}
   </style>
@@ -1239,20 +1262,20 @@
     v149.3c0,10,8.2,18.1,18.2,18.1c10,0,18.2-8.1,18.2-18.1V109.1h4.9v101.6c0,6.7,5.4,12.1,12.2,12.1c6.7,0,12.2-5.4,12.2-12.1
     L141.5,99.5z"/>
   </svg>
-  </div>
+            </div>
         </div>
     </section>
 
     <section class="">
         <h2 class="hidden">Every 3 days someone dies waiting for an organ</h2>
-        <div class="row">
+        <div class="red row expanded collapse">
 
         </div>
     </section>
 
     <section class="">
         <h2 class="hidden">doc outline title</h2>
-        <div class="row">
+        <div class="row expanded collapse">
 
         </div>
     </section>
@@ -1265,6 +1288,7 @@
     </footer>
 
     <script src="js/map.js"></script>
+    <script src="js/circle.js"></script>
     <script src="js/anatomy.js"></script>
     <script src="js/eight.js"></script>
     <script src="js/counter.js"></script>

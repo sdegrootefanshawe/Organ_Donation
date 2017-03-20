@@ -8,8 +8,8 @@
 
 .red-bg {
     background-color: $red;
-    height: 100%;
-    width: 50%;
+    // width: 50%;
+    max-height: 50%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,8 +19,8 @@
 
 .white-bg {
     background-color: $white;
-    height: 100%;
-    width: 50%;
+    // width: 50%;
+    max-height: 50%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -46,10 +46,6 @@
 }
 
 header {
-    // width: 100%;
-    // background-image: url("../images/heart_text.jpg");
-    // background-size: cover;
-    // background-repeat: no-repeat;
     h2 {
         font-family: $bebasbold;
         font-size: $xlarge-head;
@@ -89,6 +85,10 @@ header {
     background-color: $grey;
 }
 
+.red-container {
+  background-color: $red;
+}
+
 .map {
     color: $white;
 
@@ -115,10 +115,29 @@ header {
 }
 
 .half-half {
+        .circle-text {
+            position: absolute;
+            padding-top: $padding-v-xxlarge;
+        }
+//
+//     .circle-container {
+// position: relative;
+// top: 0px;
+// max-height: 600px;
+//     }
+
+.crcl {
+  position: relative;
+  svg {
+    max-height: 600px;
+  }
+}
+
     h3 {
         font-family: $bebasbook;
         font-size: 150px;
-        line-height: 1;
+        line-height: 0.9;
+        max-width: 40%;
         padding-left: 7%;
         padding-top: $padding-v-large;
         padding-bottom: $padding-v-large;
@@ -160,15 +179,16 @@ header {
 }
 
 .anatomy {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: $padding-v-medium;
-  margin-bottom: -45px;
-  h3 {
-      font-family: $bebasbold;
-      font-size: 160px;
-      line-height: 1;
-  }
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: $padding-v-medium;
+    margin-bottom: -45px;
+
+    h3 {
+        font-family: $bebasbold;
+        font-size: 160px;
+        line-height: 1;
+    }
 
     #anatomyguy {
         max-width: 600px;
@@ -184,38 +204,38 @@ header {
 }
 
 .eight-lives {
-  padding-top: $padding-v-large;
-  padding-bottom: $padding-v-large;
+    padding-top: $padding-v-large;
+    padding-bottom: $padding-v-large;
 
-  h3 {
-    font-family: $bebasregular;
-    font-size: 120px;
-    color: $white;
+    h3 {
+        font-family: $bebasregular;
+        font-size: 120px;
+        color: $white;
 
-    span {
-      font-family: $bebasbold;
-      color: $red;
+        span {
+            font-family: $bebasbold;
+            color: $red;
+        }
     }
-  }
 
-  .guy {
-    max-width: 12%;
-    max-height: 400px;
-  }
+    .guy {
+        max-width: 12%;
+        max-height: 400px;
+    }
 
-  #guy1,
-  #guy2,
-  #guy3,
-  #guy4,
-  #guy5,
-  #guy6,
-  #guy7,
-  #guy8 {
-    opacity: 0;
-  }
+    #guy1,
+    #guy2,
+    #guy3,
+    #guy4,
+    #guy5,
+    #guy6,
+    #guy7,
+    #guy8 {
+        opacity: 0;
+    }
 
-  #guy9 {
-    position: absolute;
-    left: 30px;
-  }
+    #guy9 {
+        position: absolute;
+        left: 30px;
+    }
 }

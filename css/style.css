@@ -38,8 +38,7 @@ h3 {
 
 .red-bg {
   background-color: #ed1c24;
-  height: 100%;
-  width: 50%;
+  max-height: 50%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -48,8 +47,7 @@ h3 {
 
 .white-bg {
   background-color: #fff;
-  height: 100%;
-  width: 50%;
+  max-height: 50%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -96,6 +94,9 @@ header .banner-link span {
 .grey-container {
   background-color: #292929; }
 
+.red-container {
+  background-color: #ed1c24; }
+
 .map {
   color: #fff; }
   .map span {
@@ -112,10 +113,20 @@ header .banner-link span {
   .map p {
     padding-left: 7%; }
 
+.half-half .circle-text {
+  position: absolute;
+  padding-top: 350px; }
+
+.half-half .crcl {
+  position: relative; }
+  .half-half .crcl svg {
+    max-height: 600px; }
+
 .half-half h3 {
   font-family: "bebasbook";
   font-size: 150px;
-  line-height: 1;
+  line-height: 0.9;
+  max-width: 40%;
   padding-left: 7%;
   padding-top: 100px;
   padding-bottom: 100px; }
