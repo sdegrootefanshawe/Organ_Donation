@@ -2,6 +2,17 @@
 @import "text";
 @import "spacing";
 
+p {
+    font-size: 12px !important;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1;
+    padding-top: $padding-v-small;
+    padding-bottom: $padding-v-small;
+}
+
 .pop {
     opacity: 0;
 }
@@ -86,7 +97,7 @@ header {
 }
 
 .red-container {
-  background-color: $red;
+    background-color: $red;
 }
 
 .map {
@@ -97,15 +108,31 @@ header {
     }
 
     h3 {
-        padding-top: $padding-v-large;
-        padding-bottom: $padding-v-large;
         font-family: $bebasbook;
-        font-size: 100px;
-        line-height: 1;
         padding-left: 7%;
 
         span {
             font-family: $bebasregular;
+        }
+        @media (min-width: $xxsmall) {
+            font-size: 34px;
+            padding-top: $padding-v-small;
+            padding-bottom: $padding-v-small;
+        }
+        @media (min-width: $xsmall) {
+            font-size: 50px;
+            padding-top: $padding-v-small;
+            padding-bottom: $padding-v-small;
+        }
+        @media (min-width: $small) {
+            font-size: 75px;
+            padding-top: $padding-v-small;
+            padding-bottom: $padding-v-small;
+        }
+        @media (min-width: $large) {
+            font-size: 100px;
+            padding-top: $padding-v-large;
+            padding-bottom: $padding-v-large;
         }
     }
 
@@ -115,28 +142,27 @@ header {
 }
 
 .half-half {
-        .circle-text {
-            position: absolute;
-            padding-top: $padding-v-xxlarge;
-        }
-//
-//     .circle-container {
-// position: relative;
-// top: 0px;
-// max-height: 600px;
-//     }
+    .circle-text {
+        position: absolute;
+        padding-top: $padding-v-xxlarge;
+    }
+    //
+    //     .circle-container {
+    // position: relative;
+    // top: 0px;
+    // max-height: 600px;
+    //     }
+    .crcl {
+        position: relative;
 
-.crcl {
-  position: relative;
-  svg {
-    max-height: 600px;
-  }
-}
+        svg {
+            max-height: 600px;
+        }
+    }
 
     h3 {
         font-family: $bebasbook;
         font-size: 150px;
-        line-height: 0.9;
         max-width: 40%;
         padding-left: 7%;
         padding-top: $padding-v-large;
@@ -159,16 +185,39 @@ header {
         padding-bottom: $padding-v-medium;
 
         img {
-            max-width: 700px;
+            max-width: 50%;
         }
 
         h3 {
             font-family: $bebasbook;
-            font-size: 125px;
-            line-height: 1;
 
             span {
                 font-family: $bebasregular;
+            }
+            @media (min-width: $xxsmall) {
+                font-size: 40px;
+                padding-top: $padding-v-small;
+                padding-bottom: $padding-v-small;
+            }
+            @media (min-width: $xsmall) {
+                font-size: 55px;
+                padding-top: $padding-v-small;
+                padding-bottom: $padding-v-small;
+            }
+            @media (min-width: $small) {
+                font-size: 80px;
+                padding-top: $padding-v-small;
+                padding-bottom: $padding-v-small;
+            }
+            @media (min-width: $medium) {
+                font-size: 100px;
+                padding-top: $padding-v-small;
+                padding-bottom: $padding-v-small;
+            }
+            @media (min-width: $large) {
+                font-size: 125px;
+                padding-top: $padding-v-large;
+                padding-bottom: $padding-v-large;
             }
         }
     }
@@ -182,16 +231,38 @@ header {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: $padding-v-medium;
-    margin-bottom: -45px;
+    margin-bottom: -25px;
+
+    @media (min-width: $xsmall) {
+        margin-bottom: -45px;
+    }
 
     h3 {
         font-family: $bebasbold;
-        font-size: 160px;
-        line-height: 1;
+        @media (min-width: $xxsmall) {
+            font-size: 40px;
+        }
+        @media (min-width: $xsmall) {
+            font-size: 55px;
+        }
+        @media (min-width: $small) {
+            font-size: 80px;
+        }
+        @media (min-width: $medium) {
+            font-size: 100px;
+        }
+        @media (min-width: $large) {
+            font-size: 125px;
+        }
     }
 
     #anatomyguy {
+        max-width: 320px;
+
+      @media (min-width: $xsmall) {
         max-width: 600px;
+    }
+
     }
 
     .the-organs {
@@ -204,23 +275,62 @@ header {
 }
 
 .eight-lives {
-    padding-top: $padding-v-large;
-    padding-bottom: $padding-v-large;
+    padding-top: $padding-v-small;
+    padding-bottom: $padding-v-small;
+
+    @media (min-width: $medium) {
+      padding-top: $padding-v-medium;
+      padding-bottom: $padding-v-medium;
+    }
+    @media (min-width: $large) {
+      padding-top: $padding-v-large;
+      padding-bottom: $padding-v-large;
+    }
 
     h3 {
         font-family: $bebasregular;
-        font-size: 120px;
         color: $white;
 
         span {
             font-family: $bebasbold;
             color: $red;
         }
+        @media (min-width: $xxsmall) {
+            font-size: 40px;
+        }
+        @media (min-width: $xsmall) {
+            font-size: 55px;
+        }
+        @media (min-width: $small) {
+            font-size: 80px;
+        }
+        @media (min-width: $medium) {
+            font-size: 100px;
+        }
+        @media (min-width: $large) {
+            font-size: 125px;
+        }
     }
 
     .guy {
-        max-width: 12%;
-        max-height: 400px;
+        max-width: 11%;
+        max-height: 60px;
+
+        @media (min-width: $xxsmall) {
+            max-height: 90px;
+        }
+
+        @media (min-width: $xsmall) {
+            max-height: 115px;
+        }
+        @media (min-width: $small) {
+            max-height: 140px;
+        }
+
+        @media (min-width: $large) {
+          max-width: 12%;
+            max-height: 400px;
+        }
     }
 
     #guy1,
@@ -237,5 +347,95 @@ header {
     #guy9 {
         position: absolute;
         left: 30px;
+    }
+}
+
+.ekg {
+    color: $white;
+    padding-top: $padding-v-small;
+    // padding-bottom: $padding-v-large;
+    h3 {
+        padding-left: 5% !important;
+        font-family: $bebasregular;
+        line-height: 1;
+
+        span {
+            font-family: $bebasbold;
+        }
+
+        @media (min-width: $xxsmall) {
+            font-size: 40px;
+        }
+        @media (min-width: $xsmall) {
+            font-size: 55px;
+        }
+        @media (min-width: $small) {
+            font-size: 80px;
+        }
+        @media (min-width: $medium) {
+            font-size: 100px;
+        }
+        @media (min-width: $large) {
+            font-size: 125px;
+        }
+    }
+
+    .heart-svg {
+        padding-right: 5% !important;
+    }
+}
+
+.signed-up {
+    padding-top: $padding-v-large;
+    padding-bottom: $padding-v-large;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline;
+            background-color: $black;
+            color: $white;
+            font-family: $bebasbold;
+            margin: 0;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 100px;
+            @media (min-width: $xsmall) {
+                // font-size: 55px;
+            }
+            @media (min-width: $small) {
+                // font-size: 80px;
+            }
+            @media (min-width: $medium) {
+                font-size: 300px;
+            }
+        }
+
+        .left {
+            margin-right: 5px;
+        }
+
+        .right {
+            margin-left: 5px;
+        }
+    }
+
+    .top {
+        font-family: $bebasbook;
+        line-height: 1;
+        @media (min-width: $medium) {
+            margin-bottom: -50px;
+        }
+    }
+
+    .bot {
+        font-family: $bebasbold;
+        line-height: 1;
+        @media (min-width: $medium) {
+            margin-top: -50px;
+        }
     }
 }

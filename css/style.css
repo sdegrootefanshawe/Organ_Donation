@@ -4,10 +4,6 @@ h3,
 h4 {
   text-transform: uppercase; }
 
-h3 {
-  font-size: 100px;
-  line-height: 1; }
-
 @font-face {
   font-family: bebasthin;
   src: url("../fonts/BebasNeueThin.otf");
@@ -32,6 +28,15 @@ h3 {
   font-family: bebasbold;
   src: url("../fonts/BebasNeueBold.otf");
   font-weight: 700; }
+
+p {
+  font-size: 12px !important; }
+
+h3 {
+  font-size: 24px;
+  line-height: 1;
+  padding-top: 25px;
+  padding-bottom: 25px; }
 
 .pop {
   opacity: 0; }
@@ -102,14 +107,30 @@ header .banner-link span {
   .map span {
     color: #ed1c24; }
   .map h3 {
-    padding-top: 100px;
-    padding-bottom: 100px;
     font-family: "bebasbook";
-    font-size: 100px;
-    line-height: 1;
     padding-left: 7%; }
     .map h3 span {
       font-family: "bebasregular"; }
+    @media (min-width: 480px) {
+      .map h3 {
+        font-size: 34px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 680px) {
+      .map h3 {
+        font-size: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 960px) {
+      .map h3 {
+        font-size: 75px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 1480px) {
+      .map h3 {
+        font-size: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px; } }
   .map p {
     padding-left: 7%; }
 
@@ -125,7 +146,6 @@ header .banner-link span {
 .half-half h3 {
   font-family: "bebasbook";
   font-size: 150px;
-  line-height: 0.9;
   max-width: 40%;
   padding-left: 7%;
   padding-top: 100px;
@@ -142,13 +162,36 @@ header .banner-link span {
     padding-top: 50px;
     padding-bottom: 50px; }
     .donor-card div img {
-      max-width: 700px; }
+      max-width: 50%; }
     .donor-card div h3 {
-      font-family: "bebasbook";
-      font-size: 125px;
-      line-height: 1; }
+      font-family: "bebasbook"; }
       .donor-card div h3 span {
         font-family: "bebasregular"; }
+      @media (min-width: 480px) {
+        .donor-card div h3 {
+          font-size: 40px;
+          padding-top: 25px;
+          padding-bottom: 25px; } }
+      @media (min-width: 680px) {
+        .donor-card div h3 {
+          font-size: 55px;
+          padding-top: 25px;
+          padding-bottom: 25px; } }
+      @media (min-width: 960px) {
+        .donor-card div h3 {
+          font-size: 80px;
+          padding-top: 25px;
+          padding-bottom: 25px; } }
+      @media (min-width: 1280px) {
+        .donor-card div h3 {
+          font-size: 100px;
+          padding-top: 25px;
+          padding-bottom: 25px; } }
+      @media (min-width: 1480px) {
+        .donor-card div h3 {
+          font-size: 125px;
+          padding-top: 100px;
+          padding-bottom: 100px; } }
   .donor-card h5 {
     color: #ed1c24; }
 
@@ -156,31 +199,85 @@ header .banner-link span {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 50px;
-  margin-bottom: -45px; }
+  margin-bottom: -25px; }
+  @media (min-width: 680px) {
+    .anatomy {
+      margin-bottom: -45px; } }
   .anatomy h3 {
-    font-family: "bebasbold";
-    font-size: 160px;
-    line-height: 1; }
+    font-family: "bebasbold"; }
+    @media (min-width: 480px) {
+      .anatomy h3 {
+        font-size: 40px; } }
+    @media (min-width: 680px) {
+      .anatomy h3 {
+        font-size: 55px; } }
+    @media (min-width: 960px) {
+      .anatomy h3 {
+        font-size: 80px; } }
+    @media (min-width: 1280px) {
+      .anatomy h3 {
+        font-size: 100px; } }
+    @media (min-width: 1480px) {
+      .anatomy h3 {
+        font-size: 125px; } }
   .anatomy #anatomyguy {
-    max-width: 600px; }
+    max-width: 320px; }
+    @media (min-width: 680px) {
+      .anatomy #anatomyguy {
+        max-width: 600px; } }
   .anatomy .the-organs {
     transform-origin: center; }
   .anatomy #organ {
     color: red; }
 
 .eight-lives {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  @media (min-width: 1280px) {
+    .eight-lives {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  @media (min-width: 1480px) {
+    .eight-lives {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
   .eight-lives h3 {
     font-family: "bebasregular";
-    font-size: 120px;
     color: #fff; }
     .eight-lives h3 span {
       font-family: "bebasbold";
       color: #ed1c24; }
+    @media (min-width: 480px) {
+      .eight-lives h3 {
+        font-size: 40px; } }
+    @media (min-width: 680px) {
+      .eight-lives h3 {
+        font-size: 55px; } }
+    @media (min-width: 960px) {
+      .eight-lives h3 {
+        font-size: 80px; } }
+    @media (min-width: 1280px) {
+      .eight-lives h3 {
+        font-size: 100px; } }
+    @media (min-width: 1480px) {
+      .eight-lives h3 {
+        font-size: 125px; } }
   .eight-lives .guy {
-    max-width: 12%;
-    max-height: 400px; }
+    max-width: 11%;
+    max-height: 60px; }
+    @media (min-width: 480px) {
+      .eight-lives .guy {
+        max-height: 90px; } }
+    @media (min-width: 680px) {
+      .eight-lives .guy {
+        max-height: 115px; } }
+    @media (min-width: 960px) {
+      .eight-lives .guy {
+        max-height: 140px; } }
+    @media (min-width: 1480px) {
+      .eight-lives .guy {
+        max-width: 12%;
+        max-height: 400px; } }
   .eight-lives #guy1,
   .eight-lives #guy2,
   .eight-lives #guy3,
@@ -193,3 +290,66 @@ header .banner-link span {
   .eight-lives #guy9 {
     position: absolute;
     left: 30px; }
+
+.ekg {
+  color: #fff;
+  padding-top: 25px; }
+  .ekg h3 {
+    padding-left: 5% !important;
+    font-family: "bebasregular";
+    line-height: 1; }
+    .ekg h3 span {
+      font-family: "bebasbold"; }
+    @media (min-width: 480px) {
+      .ekg h3 {
+        font-size: 40px; } }
+    @media (min-width: 680px) {
+      .ekg h3 {
+        font-size: 55px; } }
+    @media (min-width: 960px) {
+      .ekg h3 {
+        font-size: 80px; } }
+    @media (min-width: 1280px) {
+      .ekg h3 {
+        font-size: 100px; } }
+    @media (min-width: 1480px) {
+      .ekg h3 {
+        font-size: 125px; } }
+  .ekg .heart-svg {
+    padding-right: 5% !important; }
+
+.signed-up {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .signed-up ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .signed-up ul li {
+      display: inline;
+      background-color: #000;
+      color: #fff;
+      font-family: "bebasbold";
+      margin: 0;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 100px; }
+      @media (min-width: 1280px) {
+        .signed-up ul li {
+          font-size: 300px; } }
+    .signed-up ul .left {
+      margin-right: 5px; }
+    .signed-up ul .right {
+      margin-left: 5px; }
+  .signed-up .top {
+    font-family: "bebasbook";
+    line-height: 1; }
+    @media (min-width: 1280px) {
+      .signed-up .top {
+        margin-bottom: -50px; } }
+  .signed-up .bot {
+    font-family: "bebasbold";
+    line-height: 1; }
+    @media (min-width: 1280px) {
+      .signed-up .bot {
+        margin-top: -50px; } }
