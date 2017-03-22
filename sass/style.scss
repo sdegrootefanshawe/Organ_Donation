@@ -162,14 +162,26 @@ header {
 
     h3 {
         font-family: $bebasbook;
-        font-size: 150px;
+        font-size: 60px;
+        line-height: 1;
         max-width: 40%;
         padding-left: 7%;
-        padding-top: $padding-v-large;
-        padding-bottom: $padding-v-large;
+        padding-top: $padding-v-small;
+        padding-bottom: $padding-v-small;
 
         span {
             font-family: $bebasregular;
+        }
+
+        @media (min-width: $xxsmall) {
+          font-size: 100px;
+            padding-top: $padding-v-large;
+            padding-bottom: $padding-v-large;
+        }
+        
+        @media (min-width: $large) {
+            font-size: 150px;
+
         }
     }
 }
