@@ -1,26 +1,68 @@
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+@font-face {
+  font-family: bebasthin;
+  src: url("../fonts/BebasNeueThin.otf");
+  font-weight: 100; }
+
+@font-face {
+  font-family: bebaslight;
+  src: url("../fonts/BebasNeueLight.otf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: bebasbook;
+  src: url("../fonts/BebasNeueBook.otf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: bebasregular;
+  src: url("../fonts/BebasNeueRegular.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: bebasbold;
+  src: url("../fonts/BebasNeueBold.otf");
+  font-weight: 700; }
+
+p {
+  font-size: 14px !important;
+  line-height: 1 !important; }
+
+h3 {
+  font-size: 24px;
+  line-height: 1 !important;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+.pop {
+  opacity: 0; }
+
 .red-bg {
   background-color: #ed1c24;
-  height: 100%;
-  width: 50%;
+  max-height: 50%;
   margin: 0;
   padding: 0;
   border: 0;
   float: left;
   color: #fff; }
 
-.grey-bg {
-  background-color: #292929;
-  height: 100%; }
-
 .white-bg {
   background-color: #fff;
-  height: 100%;
-  width: 50%;
+  max-height: 50%;
   margin: 0;
   padding: 0;
   border: 0;
   float: left;
   color: #000; }
+
+.grey-bg {
+  background-color: #292929;
+  height: 100%; }
 
 .black-bg {
   background-color: #000;
@@ -31,3 +73,297 @@
   top: -9999px !important;
   left: -9999px !important;
   opacity: 0 !important; }
+
+header h2 {
+  font-family: "bebasbold";
+  font-size: 150px;
+  line-height: 1; }
+
+header a {
+  color: #000; }
+  header a:hover {
+    color: #000; }
+
+header .banner-type {
+  padding-top: 350px;
+  padding-bottom: 350px; }
+
+header .banner-head span {
+  color: #fff;
+  background-color: #000;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+header .banner-link span {
+  color: #ed1c24; }
+
+.grey-container {
+  background-color: #292929; }
+
+.red-container {
+  background-color: #ed1c24; }
+
+.map {
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  .map span {
+    color: #ed1c24; }
+  .map h3 {
+    font-family: "bebasbook";
+    padding-left: 7%;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .map h3 span {
+      font-family: "bebasregular"; }
+    @media (min-width: 480px) {
+      .map h3 {
+        font-size: 34px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 680px) {
+      .map h3 {
+        font-size: 50px; } }
+    @media (min-width: 960px) {
+      .map h3 {
+        font-size: 75px; } }
+    @media (min-width: 1480px) {
+      .map h3 {
+        font-size: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px; } }
+  .map p {
+    padding-left: 7%; }
+
+.half-half .circle-text {
+  position: absolute;
+  padding-top: 350px; }
+
+.half-half .crcl {
+  position: relative; }
+  .half-half .crcl svg {
+    max-height: 600px; }
+
+.half-half h3 {
+  font-family: "bebasbook";
+  font-size: 60px;
+  line-height: 1;
+  max-width: 40%;
+  padding-left: 7%;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  .half-half h3 span {
+    font-family: "bebasregular"; }
+  @media (min-width: 480px) {
+    .half-half h3 {
+      font-size: 100px;
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  @media (min-width: 1480px) {
+    .half-half h3 {
+      font-size: 150px; } }
+
+.donor-card {
+  color: #fff;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  @media (min-width: 960px) {
+    .donor-card {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  .donor-card div img {
+    max-width: 50%; }
+  .donor-card div h3 {
+    font-family: "bebasbook"; }
+    .donor-card div h3 span {
+      font-family: "bebasregular"; }
+    @media (min-width: 480px) {
+      .donor-card div h3 {
+        font-size: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 680px) {
+      .donor-card div h3 {
+        font-size: 55px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 960px) {
+      .donor-card div h3 {
+        font-size: 80px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 1280px) {
+      .donor-card div h3 {
+        font-size: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 1480px) {
+      .donor-card div h3 {
+        font-size: 125px;
+        padding-top: 50px;
+        padding-bottom: 50px; } }
+  .donor-card h5 {
+    color: #ed1c24; }
+
+.anatomy {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 50px;
+  margin-bottom: -25px; }
+  @media (min-width: 680px) {
+    .anatomy {
+      margin-bottom: -45px; } }
+  .anatomy h3 {
+    font-family: "bebasbold"; }
+    @media (min-width: 480px) {
+      .anatomy h3 {
+        font-size: 40px; } }
+    @media (min-width: 680px) {
+      .anatomy h3 {
+        font-size: 55px; } }
+    @media (min-width: 960px) {
+      .anatomy h3 {
+        font-size: 80px; } }
+    @media (min-width: 1280px) {
+      .anatomy h3 {
+        font-size: 100px; } }
+    @media (min-width: 1480px) {
+      .anatomy h3 {
+        font-size: 125px; } }
+  .anatomy #anatomyguy {
+    max-width: 320px; }
+    @media (min-width: 680px) {
+      .anatomy #anatomyguy {
+        max-width: 600px; } }
+  .anatomy .the-organs {
+    transform-origin: center; }
+  .anatomy #organ {
+    color: red; }
+
+.eight-lives {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  @media (min-width: 1280px) {
+    .eight-lives {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  @media (min-width: 1480px) {
+    .eight-lives {
+      padding-top: 150px;
+      padding-bottom: 150px; } }
+  .eight-lives h3 {
+    font-family: "bebasregular";
+    color: #fff; }
+    .eight-lives h3 span {
+      font-family: "bebasbold";
+      color: #ed1c24; }
+    @media (min-width: 480px) {
+      .eight-lives h3 {
+        font-size: 40px; } }
+    @media (min-width: 680px) {
+      .eight-lives h3 {
+        font-size: 55px; } }
+    @media (min-width: 960px) {
+      .eight-lives h3 {
+        font-size: 80px; } }
+    @media (min-width: 1280px) {
+      .eight-lives h3 {
+        font-size: 100px; } }
+    @media (min-width: 1480px) {
+      .eight-lives h3 {
+        font-size: 125px; } }
+  .eight-lives .guy {
+    max-width: 11%;
+    max-height: 60px; }
+    @media (min-width: 480px) {
+      .eight-lives .guy {
+        max-height: 90px; } }
+    @media (min-width: 680px) {
+      .eight-lives .guy {
+        max-height: 115px; } }
+    @media (min-width: 960px) {
+      .eight-lives .guy {
+        max-height: 140px; } }
+    @media (min-width: 1480px) {
+      .eight-lives .guy {
+        max-width: 12%;
+        max-height: 400px; } }
+  .eight-lives #guy1,
+  .eight-lives #guy2,
+  .eight-lives #guy3,
+  .eight-lives #guy4,
+  .eight-lives #guy5,
+  .eight-lives #guy6,
+  .eight-lives #guy7,
+  .eight-lives #guy8 {
+    opacity: 0; }
+  .eight-lives #guy9 {
+    position: absolute;
+    left: 30px; }
+
+.ekg {
+  color: #fff;
+  padding-top: 100px; }
+  .ekg h3 {
+    padding-left: 5% !important;
+    font-family: "bebasregular";
+    line-height: 1; }
+    .ekg h3 span {
+      font-family: "bebasbold"; }
+    @media (min-width: 480px) {
+      .ekg h3 {
+        font-size: 40px; } }
+    @media (min-width: 680px) {
+      .ekg h3 {
+        font-size: 55px; } }
+    @media (min-width: 960px) {
+      .ekg h3 {
+        font-size: 80px; } }
+    @media (min-width: 1280px) {
+      .ekg h3 {
+        font-size: 100px; } }
+    @media (min-width: 1480px) {
+      .ekg h3 {
+        font-size: 125px; } }
+  .ekg .heart-svg {
+    padding-right: 5% !important; }
+
+.signed-up {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .signed-up ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .signed-up ul li {
+      display: inline;
+      background-color: #000;
+      color: #fff;
+      font-family: "bebasbold";
+      margin: 0;
+      padding-top: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 100px; }
+      @media (min-width: 1280px) {
+        .signed-up ul li {
+          font-size: 300px;
+          padding-top: 10px; } }
+    .signed-up ul .left {
+      margin-right: 5px; }
+    .signed-up ul .right {
+      margin-left: 5px; }
+  .signed-up .top {
+    font-family: "bebasbook";
+    line-height: 1; }
+    @media (min-width: 1280px) {
+      .signed-up .top {
+        margin-bottom: -50px; } }
+  .signed-up .bot {
+    font-family: "bebasbold";
+    line-height: 1; }
+    @media (min-width: 1280px) {
+      .signed-up .bot {
+        margin-top: -50px; } }

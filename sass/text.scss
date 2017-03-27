@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4
+ {
+  text-transform: uppercase;
+}
+
+$bebasthin: "bebasthin";
+$bebaslight: "bebaslight";
+$bebasbook: "bebasbook";
+$bebasregular: "bebasregular";
+$bebasbold: "bebasbold";
+
+$header-line-height: 1;
+$small-head:34px;
+$medium-head:54px;
+$large-head:74px;
+$xlarge-head:150px;
+
+
+@font-face {
+    font-family: bebasthin;
+    src: url("../fonts/BebasNeueThin.otf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: bebaslight;
+    src: url("../fonts/BebasNeueLight.otf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: bebasbook;
+    src: url("../fonts/BebasNeueBook.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: bebasregular;
+    src: url("../fonts/BebasNeueRegular.otf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: bebasbold;
+    src: url("../fonts/BebasNeueBold.otf");
+    font-weight: 700;
+}

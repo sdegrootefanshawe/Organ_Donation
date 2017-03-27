@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+@font-face {
+  font-family: bebasthin;
+  src: url("../fonts/BebasNeueThin.otf");
+  font-weight: 100; }
+
+@font-face {
+  font-family: bebaslight;
+  src: url("../fonts/BebasNeueLight.otf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: bebasbook;
+  src: url("../fonts/BebasNeueBook.otf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: bebasregular;
+  src: url("../fonts/BebasNeueRegular.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: bebasbold;
+  src: url("../fonts/BebasNeueBold.otf");
+  font-weight: 700; }
