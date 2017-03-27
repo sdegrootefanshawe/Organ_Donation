@@ -405,3 +405,34 @@ header {
     @media (min-width: 1280px) {
       .signed-up .bot {
         margin-top: -50px; } }
+
+footer {
+  margin-top: 75px;
+  width: 100%;
+  height: 150px;
+  background-color: #ed1c24;
+  padding-left: 7%;
+  padding-right: 7%; }
+  footer h3 {
+    font-family: "bebasbold"; }
+    @media (min-width: 1280px) {
+      footer h3 {
+        font-size: 50px; } }
+  footer .footer-block {
+    color: #fff;
+    margin-top: -65px;
+    padding: 30px 10px;
+    width: 30%;
+    float: left;
+    max-height: 125px; }
+    footer .footer-block:nth-child(2) {
+      margin: -65px 5%;
+      display: block; }
+    footer .footer-block:last-child {
+      float: right; }
+    footer .footer-block p {
+      font-size: 12px !important;
+      text-align: center; }
+    @media (min-width: 1280px) {
+      footer .footer-block {
+        max-height: 300px; } }
