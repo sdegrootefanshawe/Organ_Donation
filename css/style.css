@@ -303,9 +303,26 @@ header .banner-link span {
     position: absolute;
     left: 30px; }
 
+@keyframes ekgbump {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0; }
+  to {
+    stroke-dashoffset: -1200; } }
+
+@keyframes heartPump {
+  0% {
+    transform: scale(1, 1); }
+  30% {
+    transform: scale(0.99, 0.99); }
+  50% {
+    transform: scale(1, 1); } }
+
 .ekg {
   color: #fff;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
   .ekg h3 {
     padding-left: 5% !important;
     font-family: "bebasregular";
@@ -329,6 +346,17 @@ header .banner-link span {
         font-size: 125px; } }
   .ekg .heart-svg {
     padding-right: 5% !important; }
+  .ekg #ekg {
+    animation-name: ekgbump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    stroke-dasharray: 600; }
+  .ekg #flatline {
+    opacity: 0; }
+  .ekg #heart {
+    animation-name: heartPump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
 
 .signed-up {
   padding-top: 100px;
