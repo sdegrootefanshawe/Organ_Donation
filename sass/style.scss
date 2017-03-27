@@ -3,8 +3,17 @@
 @import "spacing";
 
 p {
-    font-size: 14px !important;
-    line-height: 1 !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    @media (min-width: $xxsmall) {
+        font-size: 18px !important;
+    }
+    @media (min-width: $small) {
+        font-size: 20px !important;
+    }
+    @media (min-width: $medium) {
+        font-size: 24px !important;
+    }
 }
 
 h3 {
@@ -58,6 +67,7 @@ h3 {
 }
 
 header {
+  position: relative;
     h2 {
         font-family: $bebasbold;
         font-size: $xlarge-head;
@@ -65,10 +75,10 @@ header {
     }
 
     img {
-      width: 100%;
-      max-width: 1920px;
-      display: block;
-      margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        display: block;
+        margin: 0 auto;
     }
 
     a {
@@ -94,6 +104,32 @@ header {
     }
 
     .banner-link {
+        position: absolute;
+        font-size: 18px;
+        max-width: 15%;
+        margin-left: 7%;
+        bottom: 50px;
+
+        @media (min-width: $xxsmall) {
+            bottom: 100px;
+            font-size: 20px;
+        }
+        @media (min-width: $xsmall) {
+            bottom: 150px;
+            font-size: 24px;
+        }
+        @media (min-width: $small) {
+            bottom: 200px;
+            font-size: 25px;
+        }
+        @media (min-width: $medium) {
+            bottom: 300px;
+            font-size: 30px;
+        }
+        @media (min-width: $large) {
+            bottom: 350px;
+        }
+
         span {
             color: $red;
         }
@@ -101,9 +137,9 @@ header {
 }
 
 .thanks-asking {
-  img {
-    min-width: 100%;
-  }
+    img {
+        min-width: 100%;
+    }
 }
 
 .grey-container {
@@ -186,27 +222,20 @@ header {
         span {
             font-family: $bebasregular;
         }
-
         @media (min-width: $xxsmall) {
-          font-size: 100px;
+            font-size: 100px;
             padding-top: $padding-v-large;
             padding-bottom: $padding-v-large;
         }
-
         @media (min-width: $large) {
             font-size: 150px;
-
         }
     }
 }
 
 .donor-card {
     color: $white;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: $padding-v-small;
-    padding-bottom: $padding-v-small;
-
+    padding: $padding-v-small 5%;
     @media (min-width: $small) {
         padding-top: $padding-v-large;
         padding-bottom: $padding-v-large;
@@ -215,13 +244,13 @@ header {
     div {
         // padding-top: $padding-v-medium;
         // padding-bottom: $padding-v-medium;
-
         img {
             max-width: 50%;
         }
 
         h3 {
             font-family: $bebasbook;
+            font-size: 24px;
 
             span {
                 font-family: $bebasregular;
@@ -264,7 +293,6 @@ header {
     padding-right: 5%;
     padding-top: $padding-v-medium;
     margin-bottom: -25px;
-
     @media (min-width: $xsmall) {
         margin-bottom: -45px;
     }
@@ -290,11 +318,9 @@ header {
 
     #anatomyguy {
         max-width: 320px;
-
-      @media (min-width: $xsmall) {
-        max-width: 600px;
-    }
-
+        @media (min-width: $xsmall) {
+            max-width: 600px;
+        }
     }
 
     .the-organs {
@@ -309,14 +335,13 @@ header {
 .eight-lives {
     padding-top: $padding-v-small;
     padding-bottom: $padding-v-small;
-
     @media (min-width: $medium) {
-      padding-top: $padding-v-medium;
-      padding-bottom: $padding-v-medium;
+        padding-top: $padding-v-medium;
+        padding-bottom: $padding-v-medium;
     }
     @media (min-width: $large) {
-      padding-top: $padding-v-xlarge;
-      padding-bottom: $padding-v-xlarge;
+        padding-top: $padding-v-xlarge;
+        padding-bottom: $padding-v-xlarge;
     }
 
     h3 {
@@ -347,20 +372,17 @@ header {
     .guy {
         max-width: 11%;
         max-height: 60px;
-
         @media (min-width: $xxsmall) {
             max-height: 90px;
         }
-
         @media (min-width: $xsmall) {
             max-height: 115px;
         }
         @media (min-width: $small) {
             max-height: 140px;
         }
-
         @media (min-width: $large) {
-          max-width: 12%;
+            max-width: 12%;
             max-height: 400px;
         }
     }
@@ -394,7 +416,6 @@ header {
         span {
             font-family: $bebasbold;
         }
-
         @media (min-width: $xxsmall) {
             font-size: 40px;
         }
