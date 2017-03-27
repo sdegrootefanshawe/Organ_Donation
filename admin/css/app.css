@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 	margin-top:50px;
 	background: #F6FBFC;
@@ -65,4 +66,73 @@ body{
 		margin-top:30px;
 	}
 
+=======
+body{
+	margin-top:50px;
+	background: #F6FBFC;
+}
+
+.night{
+	background: rgb(0,0,128);
+	backg
+}
+
+.morning{
+	background: rgb(255,219,153);
+}
+
+.evening{
+	background: rgb(237,127,10);
+}
+
+.day{
+	background: rgb(0,223,255);
+}
+
+.input{
+	width:96%; 
+	margin-left:2%
+}
+
+.warning{
+	color:red;
+	margin-left:3%;
+}
+
+.cmsLogin{
+	font-family: 'acknowledgement';
+}
+
+#loginInfo{
+	background: rgba(255,255,255,0.8);
+}
+
+@font-face {
+    font-family: 'acknowledgement';
+    src: url('../fonts/acknowledgement-webfont.woff2') format('woff2'),
+         url('../fonts/acknowledgement-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*tablet*/
+@media screen and (min-width: 43.75em){
+
+
+}
+/*desktop*/
+@media screen and (min-width: 63.75em){
+
+	.input{
+		width:80%;
+		float:left;
+	}
+
+	.submit{
+		margin-left:2.5%;
+		margin-top:30px;
+	}
+
+>>>>>>> e12c2beaa8b09d404cb02a1d50230bdc3c4ba56c
 }
