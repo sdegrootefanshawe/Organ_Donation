@@ -3,12 +3,13 @@
 @import "spacing";
 
 p {
-    font-size: 12px !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
 }
 
 h3 {
     font-size: 24px;
-    line-height: 1;
+    line-height: 1 !important;
     padding-top: $padding-v-small;
     padding-bottom: $padding-v-small;
 }
@@ -102,6 +103,8 @@ header {
 
 .map {
     color: $white;
+    padding-top: $padding-v-small;
+    padding-bottom: $padding-v-small;
 
     span {
         color: $red;
@@ -110,6 +113,8 @@ header {
     h3 {
         font-family: $bebasbook;
         padding-left: 7%;
+        padding-top: 0;
+        padding-bottom: 0;
 
         span {
             font-family: $bebasregular;
@@ -121,13 +126,9 @@ header {
         }
         @media (min-width: $xsmall) {
             font-size: 50px;
-            padding-top: $padding-v-small;
-            padding-bottom: $padding-v-small;
         }
         @media (min-width: $small) {
             font-size: 75px;
-            padding-top: $padding-v-small;
-            padding-bottom: $padding-v-small;
         }
         @media (min-width: $large) {
             font-size: 100px;
@@ -178,7 +179,7 @@ header {
             padding-top: $padding-v-large;
             padding-bottom: $padding-v-large;
         }
-        
+
         @media (min-width: $large) {
             font-size: 150px;
 
@@ -190,11 +191,17 @@ header {
     color: $white;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: $padding-v-medium;
+    padding-top: $padding-v-small;
+    padding-bottom: $padding-v-small;
+
+    @media (min-width: $small) {
+        padding-top: $padding-v-large;
+        padding-bottom: $padding-v-large;
+    }
 
     div {
-        padding-top: $padding-v-medium;
-        padding-bottom: $padding-v-medium;
+        // padding-top: $padding-v-medium;
+        // padding-bottom: $padding-v-medium;
 
         img {
             max-width: 50%;
@@ -228,8 +235,8 @@ header {
             }
             @media (min-width: $large) {
                 font-size: 125px;
-                padding-top: $padding-v-large;
-                padding-bottom: $padding-v-large;
+                padding-top: $padding-v-medium;
+                padding-bottom: $padding-v-medium;
             }
         }
     }
@@ -295,8 +302,8 @@ header {
       padding-bottom: $padding-v-medium;
     }
     @media (min-width: $large) {
-      padding-top: $padding-v-large;
-      padding-bottom: $padding-v-large;
+      padding-top: $padding-v-xlarge;
+      padding-bottom: $padding-v-xlarge;
     }
 
     h3 {
@@ -364,7 +371,7 @@ header {
 
 .ekg {
     color: $white;
-    padding-top: $padding-v-small;
+    padding-top: $padding-v-large;
     // padding-bottom: $padding-v-large;
     h3 {
         padding-left: 5% !important;
@@ -412,6 +419,7 @@ header {
             color: $white;
             font-family: $bebasbold;
             margin: 0;
+            padding-top: 10px;
             padding-left: 25px;
             padding-right: 25px;
             font-size: 100px;
@@ -423,6 +431,7 @@ header {
             }
             @media (min-width: $medium) {
                 font-size: 300px;
+                padding-top: 10px;
             }
         }
 

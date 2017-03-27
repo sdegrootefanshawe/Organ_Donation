@@ -30,11 +30,12 @@ h4 {
   font-weight: 700; }
 
 p {
-  font-size: 12px !important; }
+  font-size: 14px !important;
+  line-height: 1 !important; }
 
 h3 {
   font-size: 24px;
-  line-height: 1;
+  line-height: 1 !important;
   padding-top: 25px;
   padding-bottom: 25px; }
 
@@ -103,12 +104,16 @@ header .banner-link span {
   background-color: #ed1c24; }
 
 .map {
-  color: #fff; }
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px; }
   .map span {
     color: #ed1c24; }
   .map h3 {
     font-family: "bebasbook";
-    padding-left: 7%; }
+    padding-left: 7%;
+    padding-top: 0;
+    padding-bottom: 0; }
     .map h3 span {
       font-family: "bebasregular"; }
     @media (min-width: 480px) {
@@ -118,14 +123,10 @@ header .banner-link span {
         padding-bottom: 25px; } }
     @media (min-width: 680px) {
       .map h3 {
-        font-size: 50px;
-        padding-top: 25px;
-        padding-bottom: 25px; } }
+        font-size: 50px; } }
     @media (min-width: 960px) {
       .map h3 {
-        font-size: 75px;
-        padding-top: 25px;
-        padding-bottom: 25px; } }
+        font-size: 75px; } }
     @media (min-width: 1480px) {
       .map h3 {
         font-size: 100px;
@@ -166,41 +167,43 @@ header .banner-link span {
   color: #fff;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 50px; }
-  .donor-card div {
-    padding-top: 50px;
-    padding-bottom: 50px; }
-    .donor-card div img {
-      max-width: 50%; }
-    .donor-card div h3 {
-      font-family: "bebasbook"; }
-      .donor-card div h3 span {
-        font-family: "bebasregular"; }
-      @media (min-width: 480px) {
-        .donor-card div h3 {
-          font-size: 40px;
-          padding-top: 25px;
-          padding-bottom: 25px; } }
-      @media (min-width: 680px) {
-        .donor-card div h3 {
-          font-size: 55px;
-          padding-top: 25px;
-          padding-bottom: 25px; } }
-      @media (min-width: 960px) {
-        .donor-card div h3 {
-          font-size: 80px;
-          padding-top: 25px;
-          padding-bottom: 25px; } }
-      @media (min-width: 1280px) {
-        .donor-card div h3 {
-          font-size: 100px;
-          padding-top: 25px;
-          padding-bottom: 25px; } }
-      @media (min-width: 1480px) {
-        .donor-card div h3 {
-          font-size: 125px;
-          padding-top: 100px;
-          padding-bottom: 100px; } }
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  @media (min-width: 960px) {
+    .donor-card {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  .donor-card div img {
+    max-width: 50%; }
+  .donor-card div h3 {
+    font-family: "bebasbook"; }
+    .donor-card div h3 span {
+      font-family: "bebasregular"; }
+    @media (min-width: 480px) {
+      .donor-card div h3 {
+        font-size: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 680px) {
+      .donor-card div h3 {
+        font-size: 55px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 960px) {
+      .donor-card div h3 {
+        font-size: 80px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 1280px) {
+      .donor-card div h3 {
+        font-size: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px; } }
+    @media (min-width: 1480px) {
+      .donor-card div h3 {
+        font-size: 125px;
+        padding-top: 50px;
+        padding-bottom: 50px; } }
   .donor-card h5 {
     color: #ed1c24; }
 
@@ -248,8 +251,8 @@ header .banner-link span {
       padding-bottom: 50px; } }
   @media (min-width: 1480px) {
     .eight-lives {
-      padding-top: 100px;
-      padding-bottom: 100px; } }
+      padding-top: 150px;
+      padding-bottom: 150px; } }
   .eight-lives h3 {
     font-family: "bebasregular";
     color: #fff; }
@@ -302,7 +305,7 @@ header .banner-link span {
 
 .ekg {
   color: #fff;
-  padding-top: 25px; }
+  padding-top: 100px; }
   .ekg h3 {
     padding-left: 5% !important;
     font-family: "bebasregular";
@@ -340,12 +343,14 @@ header .banner-link span {
       color: #fff;
       font-family: "bebasbold";
       margin: 0;
+      padding-top: 10px;
       padding-left: 25px;
       padding-right: 25px;
       font-size: 100px; }
       @media (min-width: 1280px) {
         .signed-up ul li {
-          font-size: 300px; } }
+          font-size: 300px;
+          padding-top: 10px; } }
     .signed-up ul .left {
       margin-right: 5px; }
     .signed-up ul .right {
