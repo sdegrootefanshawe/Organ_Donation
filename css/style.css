@@ -79,6 +79,12 @@ header h2 {
   font-size: 150px;
   line-height: 1; }
 
+header img {
+  width: 100%;
+  max-width: 1920px;
+  display: block;
+  margin: 0 auto; }
+
 header a {
   color: #000; }
   header a:hover {
@@ -96,6 +102,9 @@ header .banner-head span {
 
 header .banner-link span {
   color: #ed1c24; }
+
+.thanks-asking img {
+  min-width: 100%; }
 
 .grey-container {
   background-color: #292929; }

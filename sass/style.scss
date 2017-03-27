@@ -64,6 +64,13 @@ header {
         line-height: $header-line-height;
     }
 
+    img {
+      width: 100%;
+      max-width: 1920px;
+      display: block;
+      margin: 0 auto;
+    }
+
     a {
         color: $black;
 
@@ -91,6 +98,12 @@ header {
             color: $red;
         }
     }
+}
+
+.thanks-asking {
+  img {
+    min-width: 100%;
+  }
 }
 
 .grey-container {
