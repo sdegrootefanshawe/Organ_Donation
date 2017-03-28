@@ -7,71 +7,243 @@
 	console.log("SEAF Fired");
 	//variables
 
-	var st0000 = document.querySelectorAll(".st0000");
-	var st1111 = document.querySelectorAll(".st1111");
-	var million = document.querySelector("#million");
-	var firstText = document.querySelector("#firstText");
-	var secondText = document.querySelector("#secondText");
-	var thirdText = document.querySelector("#thirdText");
-	var firstPerc = document.querySelector("#firstPerc");
-	var percent = document.querySelector("#percent");
-	var secondCirclNum = document.querySelector("#secondCirclNum");
-	var fourthText = document.querySelector("#fourthText");
-	var secondCirclNum2 = document.querySelector("#secondCirclNum2");
-	var fifthText = document.querySelector("#fifthText");
-	var secondCirclNum3 = document.querySelector("#secondCirclNum3");
+	var httpRequest;
+	var textContent = document.querySelector('#text-content');
 
 	//functions
 
-	//TweenLite.to(number1, 1, {scrambleText:{text:"THIS IS NEW TEXT", chars:"XO", revealDelay:0.5, speed:0.3}});
-	//TweenLite.to(million, 1, {scrambleText:"THIS IS NEW TEXT"});
+	// httpRequest functions
 
-	function draw(){
-			console.log("draw");
-			TweenLite.to(st1111,0.3,{css:{opacity:"1",stroke:"#42d4b6"}});
-			TweenLite.to(st0000,0.3,{css:{opacity:"1"}});
-			TweenLite.fromTo(firstText, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}});
-			TweenLite.to(million, 1, {scrambleText:{text:"13.6", chars:"0123456789", speed:0.3}});
-			TweenLite.to(firstText, 0.5, {css:{opacity:"0"}, delay:2});
+	function circleTextOne(){
+		//console.log('circleTextOne');
 
-			TweenLite.fromTo(st1111,1,{drawSVG:"0%"},{drawSVG:"85%",delay:3});
-			TweenLite.to(firstPerc, 1, {scrambleText:{text:"85", chars:"0123456789", speed:0.3},delay:3});
-			TweenLite.fromTo(secondText, 1, {css:{opacity:"0.000000001"}},{css:{opacity:"1"}, delay:3});
-			TweenLite.to(secondText, 0.5, {css:{opacity:"0"}, delay:5});
+		 httpRequest = new XMLHttpRequest();
 
-			TweenLite.fromTo(thirdText, 1, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}, delay:6});
-			TweenLite.to(percent, 1, {scrambleText:{text:"30", chars:"0123456789", speed:0.3},delay:6});
-			TweenLite.fromTo(st0000,1,{drawSVG:"0%"},{drawSVG:"0% 30%",delay:6});
-			TweenLite.to(thirdText, 1, {css:{opacity:"0"}, delay:8});
-			TweenLite.to(st0000,1,{drawSVG:"100% 100%",delay:8});
-			TweenLite.to(st1111,1,{drawSVG:"100% 100%",delay:8});
-			TweenLite.to(st0000,0.3,{css:{opacity:"0"},delay:8.5});
-			TweenLite.to(st1111,0.3,{css:{opacity:"0"},delay:8.5});
+    		if (!httpRequest) {
+      		alert('Giving up :( Cannot create an XMLHTTP instance');
+      		return false;
+    		}
 
-			TweenLite.to(secondCirclNum, 1, {scrambleText:{text:"270", chars:"0123456789", speed:0.3},delay:10});
-			TweenLite.fromTo(fourthText, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}, delay:10});
-			TweenLite.to(fourthText, 0.5, {css:{opacity:"0"}, delay:12});
+    		httpRequest.onreadystatechange = popContent1;
+    		httpRequest.open('GET','admin/phpscripts/ajaxQuery.php'+ '?section=content_crclinfo_one');
+    		httpRequest.send();
 
-			TweenLite.fromTo(fifthText,0.5,{css:{opacity:"0.0000001"}},{css:{opacity:"1"},delay:13});
-			TweenLite.to(secondCirclNum2,1,{scrambleText:{text:"70", chars:"0123456789", speed:0.3},delay:13});
-			TweenLite.to(st1111,0.3,{css:{opacity:"1",stroke:"#eeba05"},delay:13});
-			TweenLite.fromTo(st1111,1,{drawSVG:"0%"},{drawSVG:"0% 70%",delay:13});
-			TweenLite.to(fifthText, 0.5, {css:{opacity:"0"}, delay:15});
+		setTimeout(circleTextTwo,3000);
+	}
 
-			TweenLite.fromTo(sixthText, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}, delay:16});
-			TweenLite.to(secondCirclNum3, 1, {scrambleText:{text:"35", chars:"0123456789", speed:0.3},delay:16});
-			TweenLite.to(st0000,0.3,{css:{opacity:"1",stroke:"#ed1c24"},delay:16});
-			TweenLite.fromTo(st0000,1,{drawSVG:"0%"},{drawSVG:"0% 35%",delay:16});
-			TweenLite.to(sixthText, 0.5, {css:{opacity:"0"}, delay:18});
-			TweenLite.to(st0000,1,{drawSVG:"100% 100%",delay:18});
-			TweenLite.to(st1111,1,{drawSVG:"100% 100%",delay:18});
-			TweenLite.to(st0000,0.3,{css:{opacity:"0"},delay:18.5});
-			TweenLite.to(st1111,0.3,{css:{opacity:"0"},delay:18.5});
+	function circleTextTwo(){
+		//console.log('circleTextTwo');
 
-			setTimeout(draw,20000);
+		httpRequest = new XMLHttpRequest();
 
-		}
+    		if (!httpRequest) {
+      		alert('Giving up :( Cannot create an XMLHTTP instance');
+      		return false;
+    		}
+
+    		httpRequest.onreadystatechange = popContent2;
+    		httpRequest.open('GET','admin/phpscripts/ajaxQuery.php'+ '?section=content_crclinfo_two');
+    		httpRequest.send();
+
+		setTimeout(circleTextThree,3000);
+	}
+
+	function circleTextThree(){
+		//console.log('circleTextThree');
+
+		httpRequest = new XMLHttpRequest();
+
+    		if (!httpRequest) {
+      		alert('Giving up :( Cannot create an XMLHTTP instance');
+      		return false;
+    		}
+
+    		httpRequest.onreadystatechange = popContent3;
+    		httpRequest.open('GET','admin/phpscripts/ajaxQuery.php'+ '?section=content_crclinfo_three');
+    		httpRequest.send();
+
+		setTimeout(circleTextFour,3000);
+	}
+
+	function circleTextFour(){
+		//console.log('circleText4');
+
+		httpRequest = new XMLHttpRequest();
+
+    		if (!httpRequest) {
+      		alert('Giving up :( Cannot create an XMLHTTP instance');
+      		return false;
+    		}
+
+    		httpRequest.onreadystatechange = popContent4;
+    		httpRequest.open('GET','admin/phpscripts/ajaxQuery.php'+ '?section=content_crclinfo_four');
+    		httpRequest.send();
+
+		setTimeout(circleTextFive,3000);
+	}
+
+	function circleTextFive(){
+		//console.log('circleText5');
+
+		httpRequest = new XMLHttpRequest();
+
+    		if (!httpRequest) {
+      		alert('Giving up :( Cannot create an XMLHTTP instance');
+      		return false;
+    		}
+
+    		httpRequest.onreadystatechange = popContent5;
+    		httpRequest.open('GET','admin/phpscripts/ajaxQuery.php'+ '?section=content_crclinfo_five');
+    		httpRequest.send();
+
+		setTimeout(circleTextSix,3000);
+	}
+
+	function circleTextSix(){
+		//console.log('circleText6');
+
+		httpRequest = new XMLHttpRequest();
+
+    		if (!httpRequest) {
+      		alert('Giving up :( Cannot create an XMLHTTP instance');
+      		return false;
+    		}
+
+    		httpRequest.onreadystatechange = popContent6;
+    		httpRequest.open('GET','admin/phpscripts/ajaxQuery.php'+ '?section=content_crclinfo_6');
+    		httpRequest.send();
+
+		setTimeout(circleTextOne,3000);
+	}
+
+	// content Pop functions
+
+	function popContent1(){
+
+		if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      		if (httpRequest.status === 200) {
+      			var content = JSON.parse(httpRequest.responseText);
+        		//console.log(content.content_crclinfo_one);
+
+        		textContent.innerHTML = content.content_crclinfo_one;
+
+        		var scramble = document.querySelector("#scramble");
+
+        		TweenLite.fromTo(textContent, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}});
+				TweenLite.to(scramble, 1, {scrambleText:{text:"13.6", chars:"0123456789", speed:0.3}});
+				TweenLite.to(textContent, 0.5, {css:{opacity:"0"}, delay:2});
+      		} else {
+        		alert('There was a problem with the request.');
+      		}
+    	}
+
+	}
+
+	function popContent2(){
+
+		if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      		if (httpRequest.status === 200) {
+      			var content = JSON.parse(httpRequest.responseText);
+        		//console.log(content.content_crclinfo_one);
+
+        		textContent.innerHTML = content.content_crclinfo_two;
+
+        		var scramble = document.querySelector("#scramble");
+
+        		TweenLite.fromTo(textContent, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}});
+				TweenLite.to(scramble, 1, {scrambleText:{text:"85", chars:"0123456789", speed:0.3}});
+				TweenLite.to(textContent, 0.5, {css:{opacity:"0"}, delay:2});
+      		} else {
+        		alert('There was a problem with the request.');
+      		}
+    	}
+
+	}
+
+	function popContent3(){
+
+		if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      		if (httpRequest.status === 200) {
+      			var content = JSON.parse(httpRequest.responseText);
+        		//console.log(content.content_crclinfo_one);
+
+        		textContent.innerHTML = content.content_crclinfo_three;
+
+        		var scramble = document.querySelector("#scramble");
+
+        		TweenLite.fromTo(textContent, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}});
+				TweenLite.to(scramble, 1, {scrambleText:{text:"30", chars:"0123456789", speed:0.3}});
+				TweenLite.to(textContent, 0.5, {css:{opacity:"0"}, delay:2});
+      		} else {
+        		alert('There was a problem with the request.');
+      		}
+    	}
+
+	}
+
+	function popContent4(){
+
+		if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      		if (httpRequest.status === 200) {
+      			var content = JSON.parse(httpRequest.responseText);
+        		//console.log(content.content_crclinfo_one);
+
+        		textContent.innerHTML = content.content_crclinfo_four;
+
+        		var scramble = document.querySelector("#scramble");
+
+        		TweenLite.fromTo(textContent, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}});
+				TweenLite.to(scramble, 1, {scrambleText:{text:"270", chars:"0123456789", speed:0.3}});
+				TweenLite.to(textContent, 0.5, {css:{opacity:"0"}, delay:2});
+      		} else {
+        		alert('There was a problem with the request.');
+      		}
+    	}
+
+	}
+
+	function popContent5(){
+
+		if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      		if (httpRequest.status === 200) {
+      			var content = JSON.parse(httpRequest.responseText);
+        		//console.log(content.content_crclinfo_one);
+
+        		textContent.innerHTML = content.content_crclinfo_five;
+
+        		var scramble = document.querySelector("#scramble");
+
+        		TweenLite.fromTo(textContent, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}});
+				TweenLite.to(scramble, 1, {scrambleText:{text:"70", chars:"0123456789", speed:0.3}});
+				TweenLite.to(textContent, 0.5, {css:{opacity:"0"}, delay:2});
+      		} else {
+        		alert('There was a problem with the request.');
+      		}
+    	}
+
+	}
+
+	function popContent6(){
+
+		if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      		if (httpRequest.status === 200) {
+      			var content = JSON.parse(httpRequest.responseText);
+        		//console.log(content.content_crclinfo_one);
+
+        		textContent.innerHTML = content.content_crclinfo_6;
+
+        		var scramble = document.querySelector("#scramble");
+
+        		TweenLite.fromTo(textContent, 0.5, {css:{opacity:"0.0000001"}},{css:{opacity:"1"}});
+				TweenLite.to(scramble, 1, {scrambleText:{text:"35", chars:"0123456789", speed:0.3}});
+				TweenLite.to(textContent, 0.5, {css:{opacity:"0"}, delay:2});
+      		} else {
+        		alert('There was a problem with the request.');
+      		}
+    	}
+
+	}
 
 	//listeners
-	window.addEventListener("DOMContentLoaded",draw, false);
+	window.addEventListener("DOMContentLoaded",circleTextOne,false);
 })();

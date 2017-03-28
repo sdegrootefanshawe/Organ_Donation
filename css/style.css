@@ -358,6 +358,10 @@ header .banner-link span {
     animation-duration: 2s;
     animation-iteration-count: infinite; }
 
+#text-content p {
+  font-family: "bebasregular";
+  font-size: 180pt !important; }
+
 .signed-up {
   padding-top: 100px;
   padding-bottom: 100px; }
