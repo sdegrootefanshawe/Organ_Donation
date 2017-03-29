@@ -15,7 +15,7 @@
 			//sql queries
 			$loginString = "SELECT * FROM tbl_user WHERE user_uname ='{$username}' AND user_password = '{$password}'";
 			$userAttempts_and_lockout = "SELECT user_attempts, user_lockout_date FROM tbl_user WHERE user_uname = '{$username}'";
-			$db_usernamesString = "SELECT user_uname FROM tbl_user";
+			//$db_usernamesString = "SELECT user_uname FROM tbl_user";
 
 			$user_set = mysqli_query($link, $loginString);
 			$user_attempts_query = mysqli_query($link, $userAttempts_and_lockout);
@@ -27,7 +27,7 @@
 			if( mysqli_num_rows($user_set)){
 
 				$found_user = mysqli_fetch_array($user_set, MYSQLI_ASSOC);
-				$all_usernames = mysqli_fetch_array($db_usernamesString, MYSQLI_ASSOC);
+				//$all_usernames = mysqli_fetch_array($db_usernamesString, MYSQLI_ASSOC);
 
 				$id = $found_user["user_id"];
 				$attempts = $found_user['user_attempts'];
@@ -47,14 +47,14 @@
 				$_SESSION['users_attempts'] = $attempts;
 				$_SESSION['users_lockout_date'] = $lockout_date;
 				$_SESSION['users_level'] = $found_user['user_level'];
-				$_SESSION['allUnames'] = $all_usernames['user_uname'];
+				//$_SESSION['allUnames'] = $all_usernames['user_uname'];
 
 				//will check if user is locked out
 				if($attempts>2){
 
 					if((strtotime($properDate) - strtotime($lockout_date))<1800){
 
-					$message = "You are currently locked out. Please wait ".(30 - floor((strtotime($properDate) - strtotime($lockout_date))/60))." minutes until you can try again.";
+					$message = "You are currently locked out. Please wait ".(30 - floor((strtotime($properDate) - strtotime($lockout_date))/60))." minutes before trying again.";
 
 					return $message;
 
@@ -96,7 +96,7 @@
 						}else{
 							$currentDate = "UPDATE tbl_user SET user_login_date = '{$properDate}' WHERE user_uname = '{$username}'";
 							$updateQuery = mysqli_query($link, $currentDate);
-							redirect_to("admin/admin_edituser.php");
+							redirect_to("admin_edituser.php");
 						}
 
 					}else{
@@ -113,7 +113,7 @@
 				}
 
 
-				redirect_to("admin/admin_index.php");
+				redirect_to("admin_index.php");
 
 			//if user's password is incorrect	
 			}else{
@@ -125,8 +125,15 @@
 				//it first checks if the user is locked out
 				if($attempts>2){
 
+					if((strtotime($properDate) - strtotime($lockout_date))>1800){
+						$updateLockout = "UPDATE tbl_user SET user_lockout_date = '$properDate'  WHERE user_uname = '{$username}'";
+						$updateQuery = mysqli_query($link, $updateLockout);
+						$message = "You are currently locked out. Please wait 30 minutes before trying again.";
+						return $message;
+					}else{
 					$message = "You are currently locked out. Please wait ".(30 - floor((strtotime($properDate) - strtotime($lockout_date))/60))." minutes before trying again.";
 					return $message;
+					}
 
 				//if not already locked out, at this point they are locked out and we log the time they were locked out so we can calculate 30 mins from this time
 				}else if($attempts>1){

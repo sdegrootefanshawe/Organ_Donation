@@ -16,8 +16,12 @@
 		}
 	}
 
-	function editUsers($id,$fname,$lname,$username,$email,$level,$suspend,$attempts,$delete){
+	function editUsers($id,$fname,$lname,$username,$email,$level,$suspend,$delete){
 		include("connect.php");
+
+		date_default_timezone_set('America/toronto');
+		$date = new dateTime();
+		$properDate = $date -> format('Y-m-d H:i:s');
 
 		//just added that when someone edits their accounts, it changes user_edited to 'yes'
 
@@ -26,22 +30,10 @@
 			$updateDeleteQuery = mysqli_query($link,$updateDelete);
 		}
 
-		if($suspend === '2' && $attempts === '2'){
+		if($suspend === 2 || $suspend === '2'){
 
-			$updateString = "UPDATE tbl_user SET user_fname = '{$fname}', user_lname='{$lname}', user_uname ='{$username}', user_email = '{$email}', user_level = '{$level}', user_suspend = 'no', user_attempts = '0' WHERE user_id = '{$id}'";
+			$updateString = "UPDATE tbl_user SET user_fname = '{$fname}', user_lname='{$lname}', user_uname ='{$username}', user_email = '{$email}', user_level = '{$level}', user_suspend = 'no', user_attempts = '0', user_create_date = '$properDate' WHERE user_id = '{$id}'";
 			$updateQuery = mysqli_query($link,$updateString);
-
-		}else if($suspend = '2'){
-
-			$updateString = "UPDATE tbl_user SET user_fname = '{$fname}', user_lname='{$lname}', user_uname ='{$username}', user_email = '{$email}', user_level = '{$level}', user_suspend = 'no' WHERE user_id = '{$id}'";
-			$updateQuery = mysqli_query($link,$updateString);
-
-		}else if($attempts = '2'){
-
-			$updateAttemptString = "UPDATE tbl_user SET user_fname = '{$fname}', user_lname='{$lname}', user_uname ='{$username}', user_email = '{$email}', user_level = '{$level}', user_attempts = '0' WHERE user_id = '{$id}'";
-			$updateQuery = mysqli_query($link,$updateAttemptString);
-
-		}else{
 
 			$updateString = "UPDATE tbl_user SET user_fname = '{$fname}', user_lname='{$lname}', user_uname ='{$username}', user_email = '{$email}', user_level = '{$level}' WHERE user_id = '{$id}'";
 			$updateQuery = mysqli_query($link,$updateString);

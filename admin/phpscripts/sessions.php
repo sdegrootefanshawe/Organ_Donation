@@ -10,6 +10,6 @@
 	function logged_out(){
 		session_destroy();
 
-		redirect_to("../../index.php");
+		redirect_to("../index.php");
 	}
 ?>
