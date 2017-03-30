@@ -436,9 +436,11 @@ header {
     }
 }
 
-#text-content p{
-    font-family:$bebasregular;
-    font-size:18pt !important;
+#text-content{ 
+    p{
+        font-family:$bebasregular;
+        font-size:18pt !important;
+    }
 }
 
 .signed-up {
@@ -496,4 +498,11 @@ header {
             margin-top: -50px;
         }
     }
+}
+
+#webPreview{
+    overflow:scroll;
+    height:500px;
+    width:90%;
+    margin-left:5%;
 }

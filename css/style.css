@@ -399,3 +399,9 @@ header .banner-link span {
     @media (min-width: 1280px) {
       .signed-up .bot {
         margin-top: -50px; } }
+
+#webPreview {
+  overflow: scroll;
+  height: 500px;
+  width: 90%;
+  margin-left: 5%; }

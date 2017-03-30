@@ -46,12 +46,8 @@
         <h2 class="hidden">life saving transplants</h2>
         <div class="row expanded collapse">
             <div class="small-6 float-left column">
-
-            	<?php
-                    echo $populateContent['content_section_one'];
-                ?>
             
-                <!-- <h3 class="small-12 column">over <span>1,600</span><br> ontarians are<br> waiting to recieve<br> <span>life saving</span><br> organ transplants</h3> -->
+                <h3 class="small-12 column">over <span><?php echo $populateContent['content_section_one']; ?></span><br> ontarians are<br> waiting to receive<br> <span>life saving</span><br> organ transplants</h3>
                 <p>There's no shortage of organs, just a <br> shortage of donors.</p>
                 <p>This is an <span>awareness</span> issue.</p>
             </div>
@@ -312,7 +308,7 @@
             <div class="white-bg small-12 large-6 column crcl">
 
                 <div id="text-content" class="circle-text-container text-center float-center">
-
+                <p><span id="firstCircleContent"></span><span id="secondCircleContent"><span></p>
             	</div>
 
                 <!-- <div class="circle-container">
@@ -1370,7 +1366,7 @@
     </footer>
 
     <script src="js/map.js"></script>
-    <script src="js/circle.js"></script>
+    <script src="js/circleAnim.js"></script>
     <!-- <script src="js/ekg.js"></script> -->
     <script src="js/anatomy.js"></script>
     <script src="js/eight.js"></script>
