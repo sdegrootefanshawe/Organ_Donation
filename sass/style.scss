@@ -69,6 +69,11 @@ h3 {
 header {
     position: relative;
 
+    // @media (min-width: $xmedium) {
+    //   position: absolute;
+    //   top: 0;
+    // }
+
     h2 {
         font-family: $bebasbold;
         font-size: $xlarge-head;
@@ -408,7 +413,7 @@ header {
     color: $white;
     padding-top: $padding-v-large;
     padding-bottom: $padding-v-large;
-    
+
     h3 {
         padding-left: 5% !important;
         font-family: $bebasregular;
