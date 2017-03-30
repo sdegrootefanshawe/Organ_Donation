@@ -1,8 +1,16 @@
 var pop = document.querySelectorAll(".pop");
-
 var time = 0.5;
 var scale = 0.98;
 
+function check() {
+  var map = document.querySelector(".map");
+  var height = window.scrollY;
+  var mapoff = map.offsetTop;
+
+  if (mapoff < height + 200) {
+    runanim();
+  }
+}
 
 function runanim() {
   var tl = new TimelineMax();
@@ -24,4 +32,4 @@ function runanim() {
   tl.to(sixteen, time, {scale: scale, opacity: 1}, "-=0.27");
 }
 
-window.addEventListener('load', runanim, false);
+window.addEventListener('scroll', check, false);

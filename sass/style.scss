@@ -407,7 +407,8 @@ header {
 .ekg {
     color: $white;
     padding-top: $padding-v-large;
-    // padding-bottom: $padding-v-large;
+    padding-bottom: $padding-v-large;
+    
     h3 {
         padding-left: 5% !important;
         font-family: $bebasregular;
@@ -529,8 +530,11 @@ footer {
         }
 
         p {
-          font-size: 12px !important;
+          font-size: 15px !important;
           text-align: center;
+          @media (min-width: $medium) {
+            font-size: 20px !important;
+          }
         }
 
         @media (min-width: $medium) {

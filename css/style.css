@@ -343,7 +343,8 @@ header {
 
 .ekg {
   color: #fff;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
   .ekg h3 {
     padding-left: 5% !important;
     font-family: "bebasregular";
@@ -431,8 +432,11 @@ footer {
     footer .footer-block:last-child {
       float: right; }
     footer .footer-block p {
-      font-size: 12px !important;
+      font-size: 15px !important;
       text-align: center; }
+      @media (min-width: 1280px) {
+        footer .footer-block p {
+          font-size: 20px !important; } }
     @media (min-width: 1280px) {
       footer .footer-block {
         max-height: 300px; } }
