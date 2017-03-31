@@ -5,7 +5,7 @@ function check8() {
   var height = window.scrollY;
   var mapoff = map.offsetTop;
 
-  if (mapoff < height) {
+  if (mapoff < height + 200) {
     runanim8();
   }
 }
