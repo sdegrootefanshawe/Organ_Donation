@@ -84,7 +84,11 @@ h3 {
   opacity: 0 !important; }
 
 header {
-  position: relative; }
+  position: relative;
+  z-index: 999; }
+  @media (min-width: 1024px) {
+    header {
+      position: fixed; } }
   header h2 {
     font-family: "bebasbold";
     font-size: 150px;
@@ -133,6 +137,22 @@ header {
         bottom: 350px; } }
     header .banner-link span {
       color: #ed1c24; }
+
+.follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s all; }
+  .follower:hover {
+    background-color: black; }
+  .follower a {
+    font-size: 18px;
+    color: #fff !important; }
 
 .thanks-asking img {
   min-width: 100%; }
@@ -270,13 +290,23 @@ header {
     @media (min-width: 1480px) {
       .anatomy h3 {
         font-size: 125px; } }
+  .anatomy p {
+    color: #fff;
+    margin-top: 125px;
+    position: absolute;
+    background-color: #292929;
+    padding: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: -50px; }
   .anatomy #anatomyguy {
     max-width: 320px; }
     @media (min-width: 680px) {
       .anatomy #anatomyguy {
         max-width: 600px; } }
   .anatomy .the-organs {
-    transform-origin: center; }
+    transform-origin: center !important; }
   .anatomy #organ {
     color: red; }
 
@@ -399,7 +429,7 @@ header {
     line-height: 1; }
     @media (min-width: 1280px) {
       .signed-up .top {
-        margin-bottom: -50px; } }
+        margin-bottom: -40px; } }
   .signed-up .bot {
     font-family: "bebasbold";
     line-height: 1; }
@@ -408,7 +438,8 @@ header {
         margin-top: -50px; } }
 
 footer {
-  margin-top: 75px;
+  position: relative;
+  margin-top: 85px;
   width: 100%;
   height: 150px;
   background-color: #ed1c24;
@@ -421,18 +452,19 @@ footer {
         font-size: 50px; } }
   footer .footer-block {
     color: #fff;
-    margin-top: -65px;
+    margin-top: -85px;
+    margin-bottom: 30px;
     padding: 30px 10px;
     width: 30%;
     float: left;
     max-height: 125px; }
     footer .footer-block:nth-child(2) {
-      margin: -65px 5%;
+      margin: -85px 5%;
       display: block; }
     footer .footer-block:last-child {
       float: right; }
     footer .footer-block p {
-      font-size: 15px !important;
+      font-size: 14px !important;
       text-align: center; }
       @media (min-width: 1280px) {
         footer .footer-block p {
@@ -440,3 +472,13 @@ footer {
     @media (min-width: 1280px) {
       footer .footer-block {
         max-height: 300px; } }
+  footer .social-media {
+    position: absolute;
+    bottom: 5px;
+    right: 7%; }
+  footer li {
+    list-style: none;
+    display: inline; }
+  footer img {
+    width: 35px;
+    margin-left: 25px; }
