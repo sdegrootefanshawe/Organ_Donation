@@ -59,6 +59,11 @@ h3 {
     height: 100%;
 }
 
+.close {
+  padding-top: 15px;
+  max-width: 35px;
+}
+
 .hidden {
     position: absolute !important;
     top: -9999px !important;
@@ -107,9 +112,42 @@ header {
             padding-right: 25px;
         }
     }
+}
 
+#sharables {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 99999;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-right: 70px;
 
+  h3 {
+    color: $white;
+    font-family: $bebasbold;
+    font-size: $medium-head;
+  }
+
+  .sharable {
+    margin-top: 20px;
+    overflow: hidden;
+
+    a {
+      transition: .3s all;
+
+      &:hover {
+        filter: brightness(60%);
+      }
+    }
+  }
 }
 
 .follower {
@@ -514,6 +552,15 @@ footer {
     padding-left: 7%;
     padding-right: 7%;
 
+    a {
+      color: $red;
+      transition: .3s all;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
     h3 {
         font-family: $bebasbold;
         @media (min-width: $medium) {
@@ -562,7 +609,7 @@ footer {
       margin-top: 40px;
 
       ul {
-        width: 25%;
+        width: 17%;
         float: right;
       }
     }

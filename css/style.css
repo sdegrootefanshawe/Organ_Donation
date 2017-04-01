@@ -77,6 +77,10 @@ h3 {
   background-color: #000;
   height: 100%; }
 
+.close {
+  padding-top: 15px;
+  max-width: 35px; }
+
 .hidden {
   position: absolute !important;
   top: -9999px !important;
@@ -110,6 +114,32 @@ header {
     background-color: #000;
     padding-left: 25px;
     padding-right: 25px; }
+
+#sharables {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 99999;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-right: 70px; }
+  #sharables h3 {
+    color: #fff;
+    font-family: "bebasbold";
+    font-size: 54px; }
+  #sharables .sharable {
+    margin-top: 20px;
+    overflow: hidden; }
+    #sharables .sharable a {
+      transition: .3s all; }
+      #sharables .sharable a:hover {
+        filter: brightness(60%); }
 
 .follower {
   position: fixed;
@@ -418,6 +448,11 @@ footer {
   background-color: #ed1c24;
   padding-left: 7%;
   padding-right: 7%; }
+  footer a {
+    color: #ed1c24;
+    transition: .3s all; }
+    footer a:hover {
+      color: #fff; }
   footer h3 {
     font-family: "bebasbold"; }
     @media (min-width: 1280px) {
@@ -453,7 +488,7 @@ footer {
     width: 100%;
     margin-top: 40px; }
     footer .social-media ul {
-      width: 25%;
+      width: 17%;
       float: right; }
   footer li {
     list-style: none;
