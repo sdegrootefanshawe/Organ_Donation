@@ -109,7 +109,7 @@ header {
     }
 
 
-    }
+
 }
 
 .follower {
@@ -332,9 +332,9 @@ header {
         }
     }
 
-    // .the-organs {
-    //     transform-origin: center !important;
-    // }
+    .the-organs {
+        transform-origin: center !important;
+    }
 
     #organ {
         color: red;
@@ -509,7 +509,7 @@ footer {
   position: relative;
     margin-top: 85px;
     width: 100%;
-    height: 150px;
+    height: 175px;
     background-color: $red;
     padding-left: 7%;
     padding-right: 7%;
@@ -519,6 +519,10 @@ footer {
         @media (min-width: $medium) {
             font-size: 50px;
         }
+    }
+
+    .blocks {
+      margin-bottom: 50px;
     }
 
     .footer-block {
@@ -552,10 +556,15 @@ footer {
     }
 
     .social-media {
-      position: absolute;
-      bottom: 5px;
-      right: 7%;
+      clear: both;
+      height: 50px;
+      width: 100%;
+      margin-top: 40px;
 
+      ul {
+        width: 25%;
+        float: right;
+      }
     }
 
     li {
