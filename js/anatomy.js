@@ -12,13 +12,15 @@ var eye = document.querySelector("#eye"),
     info = document.querySelector("#info");
 
 var anatomy = document.querySelectorAll(".anatomy");
+var scale = 1.02;
+
 
 function eyeHover() {
     console.log("eye");
     organ.innerHTML = "eyes";
     info.innerHTML = "Eye donation restores sight after disease, injury or congenital blindness.";
     var tl = new TimelineMax();
-    tl.to(eye, 0.5, {scale: 1.05});
+    tl.to(eye, 0.5, {scale: scale});
     tl.to(eye, 0.5, {scale: 1});
 }
 function heartHover() {
@@ -26,7 +28,7 @@ function heartHover() {
     organ.innerHTML = "heart";
     info.innerHTML = "Hearts donated for heart valves repair birth defects in children and others. 55 Ontarians need a complete heart transplant.";
     var tl = new TimelineMax();
-    tl.to(heart, 0.5, {scale: 1.05});
+    tl.to(heart, 0.5, {scale: scale});
     tl.to(heart, 0.5, {scale: 1});
 }
 function lungsHover() {
@@ -34,7 +36,7 @@ function lungsHover() {
     organ.innerHTML = "lungs";
     info.innerHTML = "62 people are waiting for lung transplants.";
     var tl = new TimelineMax();
-    tl.to(lungs, 0.5, {scale: 1.05});
+    tl.to(lungs, 0.5, {scale: scale});
     tl.to(lungs, 0.5, {scale: 1});
 }
 function kidneysHover() {
@@ -42,7 +44,7 @@ function kidneysHover() {
     organ.innerHTML = "kidneys";
     info.innerHTML = "1,118 adults and children in Ontario spend hours in dialysis treatment because they need Kidney transplants.";
     var tl = new TimelineMax();
-    tl.to(kidneys, 0.5, {scale: 1.05});
+    tl.to(kidneys, 0.5, {scale: scale});
     tl.to(kidneys, 0.5, {scale: 1});
 }
 function pancreasHover() {
@@ -50,7 +52,7 @@ function pancreasHover() {
     organ.innerHTML = "pancreas";
     info.innerHTML = "2 Ontarians need a pancreas.";
     var tl = new TimelineMax();
-    tl.to(pancreas, 0.5, {scale: 1.05});
+    tl.to(pancreas, 0.5, {scale: scale});
     tl.to(pancreas, 0.5, {scale: 1});
 }
 function liverHover() {
@@ -58,7 +60,7 @@ function liverHover() {
     organ.innerHTML = "liver";
     info.innerHTML = "231 people need a liver transplant.";
     var tl = new TimelineMax();
-    tl.to(liver, 0.5, {scale: 1.05});
+    tl.to(liver, 0.5, {scale: scale});
     tl.to(liver, 0.5, {scale: 1});
 }
 function intestinesHover() {
@@ -66,7 +68,7 @@ function intestinesHover() {
     organ.innerHTML = "intestines";
     info.innerHTML = "1 person is waiting for a lower bowel transplant";
     var tl = new TimelineMax();
-    tl.to(intestines, 0.5, {scale: 1.05});
+    tl.to(intestines, 0.5, {scale: scale});
     tl.to(intestines, 0.5, {scale: 1});
 }
 function boneHover() {
@@ -74,7 +76,7 @@ function boneHover() {
     organ.innerHTML = "bones";
     info.innerHTML = "Bone donation restores mobility and prevents amputation.";
     var tl = new TimelineMax();
-    tl.to(bone, 0.5, {scale: 1.05});
+    tl.to(bone, 0.5, {scale: scale});
     tl.to(bone, 0.5, {scale: 1});
 }
 function bodyHover() {

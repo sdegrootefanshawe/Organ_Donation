@@ -22,28 +22,47 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CMS</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <script src="../greensock/src/minified/TweenMax.min.js"></script>
+    <script src="../js/ScrollToPlugin.min.js"></script>
+    <script src="../js/DrawSVGPlugin.min.js"></script>
+    <script src="../js/ScrambleTextPlugin.min.js"></script>
+    <script src="../js/MorphSVGPlugin.min.js"></script>
+    <script src="../js/CSSPlugin.min.js"></script>
   </head>
   <body>
+  <h1 class="hidden">Login Page</h1>
 
-	<?php if(!empty($message)){echo $message;} ?>
+  <section class="half-half">
+        <h2 class="hidden">Please Login</h2>
+        <div class="row expanded">
+            <div class="red-bg small-12 medium-6 large-6 column">
+                <h3>ORGAN DONATION <span>ADMIN LOGIN</span></h3>
+            </div>
 
-		<h1>Please Login</h1>
-		<form action="index.php" method="post">
-			<label>Username:</label>
-			<input type="text" Name="username" value="">
-			<label>Password:</label>
-			<input type="password" name="password" value="">
-			<input type="submit" name="submit" value="Login">
+            <div class="white-bg small-12 medium-6 large-6 column crcl">
 
-		</form>
+              <form action="index.php" method="post">
+              <label>Username:</label>
+              <input class="roboto" type="text" Name="username" value="">
+              <label>Password:</label>
+              <input class="roboto" type="password" name="password" value="">
+              <input class="button small-12 end column" type="submit" name="submit" value="Login">
+              </form>
+              
+              <a class="button small-12 end column" href="../index.php">Return to Website</a>
 
-    <a href="../index.php">Return to Website</a>
+              <h2 class="errorMessage"><?php if(!empty($message)){echo $message;} ?></h2>
 
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/vendor/what-input.min.js"></script>
+    <script src="../js/foundation.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -22,15 +22,30 @@
 		$message = $result;
 	}
 ?>
-<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Create New User</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="../css/foundation.css" />
+<script src="../greensock/src/minified/TweenMax.min.js"></script>
+<script src="../js/ScrollToPlugin.min.js"></script>
+<script src="../js/DrawSVGPlugin.min.js"></script>
+<script src="../js/ScrambleTextPlugin.min.js"></script>
+<script src="../js/MorphSVGPlugin.min.js"></script>
+<script src="../js/CSSPlugin.min.js"></script>
 </head>
 <body>
-	<h1>Edit User</h1>
+<h1 class="hidden">Edit User</h1>
+	<section class="half-half">
+	<div class="row expanded">
 
+	<div class="red-bg editUserH3 small-12 medium-6 large-6 column">
+	<h3>Edit your account</h3>
+	</div>
+
+	<div class="white-bg small-12 medium-6 large-6 column crcl">
 	<?php
 		if(!empty($message)){
 
@@ -69,11 +84,15 @@
 		>
 
 		<br><br>
-		<input type="submit" name="submit" value="Edit User">
+		<input class="button small-12 column" type="submit" name="submit" value="Edit User">
+		<a class="button small-12 column" href="admin_index.php">Back to login page</a>
 
 	</form>
+	</div>
 
-	<a href="admin_index.php">Back to login page</a>
+	</div>
+
+	</section>
 
 </body>
 </html>

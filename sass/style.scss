@@ -4,15 +4,52 @@
 @import "spacing";
 
 p {
-    font-size: 14px !important;
+    
+    font-size:10px;
     line-height: 1 !important;
+
+    @media (min-width:$laptop){
+    font-size: 30px !important;
+    }
+}
+
+.close {
+  padding-top: 15px;
+  max-width: 35px;
+}
+
+select{
+        height:70px !important;
+        line-height:50px !important;
+        font-size:30px !important;
+        @media (min-width: $large) {
+            height:40px !important;
+            line-height:20px !important;
+            font-size:18px !important;
+        }
+}
+
+h1{
+    font-size:70px !important;
+    font-family:$bebasbold !important;
+    color:$white !important;
+    text-align:center;
+
+    span{
+        color:$red;
+    }
 }
 
 h3 {
     font-size: 24px;
     line-height: 1 !important;
+    font-family:$bebasregular !important;
     padding-top: $padding-v-small;
     padding-bottom: $padding-v-small;
+}
+
+.bebas{
+    font-family:$bebasregular;
 }
 
 .pop {
@@ -22,7 +59,7 @@ h3 {
 .red-bg {
     background-color: $red;
     // width: 50%;
-    max-height: 50%;
+    max-height: 100%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -33,12 +70,15 @@ h3 {
 .white-bg {
     background-color: $white;
     // width: 50%;
-    max-height: 50%;
     margin: 0;
     padding: 0;
     border: 0;
     float: left;
     color: $black;
+
+    @media(min-width:$laptop){
+            max-height: 50%;
+    }
 }
 
 .grey-bg {
@@ -58,11 +98,33 @@ h3 {
     opacity: 0 !important;
 }
 
+
+
+
+
+
+
+
+
+
 header {
+    position: relative;
+    z-index: 999;
+    @media (min-width: $xmedium) {
+        position: fixed;
+    }
+
     h2 {
         font-family: $bebasbold;
         font-size: $xlarge-head;
         line-height: $header-line-height;
+    }
+
+    img {
+        width: 100%;
+        max-width: 1920px;
+        display: block;
+        margin: 0 auto;
     }
 
     a {
@@ -87,10 +149,41 @@ header {
         }
     }
 
-    .banner-link {
-        span {
-            color: $red;
-        }
+
+    
+}
+
+
+
+
+
+
+
+
+.follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s all;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    a {
+        font-size: 18px;
+        color: $white !important;
+    }
+}
+
+.thanks-asking {
+    img {
+        min-width: 100%;
     }
 }
 
@@ -101,6 +194,143 @@ header {
 .red-container {
     background-color: $red;
 }
+
+
+
+
+
+
+
+
+
+
+
+.half-half {
+    .circle-text {
+        position: absolute;
+        padding-top: $padding-v-xxlarge;
+    }
+    .crcl {
+        position: relative;
+
+        @media (min-width:$laptop){svg {
+            max-height: 600px;
+        }}
+    }
+
+    .red-bg{
+        h3{
+            font-size:105px;
+
+            @media (min-width:$large-laptop){
+                text-align:center;
+                font-size:150px;
+            }
+        }
+    }
+
+    .black-bg{
+    h2{
+        font-size:50px;
+        text-align:center;
+
+        @media(min-width:$tablet){
+            font-size:40px;
+        }
+
+        @media(min-width:$laptop){
+            font-size:50px;
+        }
+    }
+
+    a{
+        font-size:50px !important;
+
+        @media (min-width:$tablet){
+            font-size:35px !important;
+            padding-top:10%;
+        }
+    }
+    }
+
+    h3 {
+        font-family: $bebasbook;
+        font-size: 90px;
+        line-height: 1;
+        padding-top: $padding-v-small;
+        padding-bottom: $padding-v-small;
+        text-align:center;
+
+        span {
+            font-family: $bebasregular;
+        }
+
+        @media (min-width: $tablet){
+            font-size: 150px;
+        }
+
+        @media (min-width: $laptop) {
+            max-width: 40%;
+            padding-left: 7%;
+            font-size: 100px;
+        }
+
+        @media (min-width: $large-laptop) {
+            max-width: 40%;
+            padding-left: 7%;
+            font-size: 150px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+#text-content{
+
+    @media (min-width: $medium) {
+            padding-left:20%;
+            padding-right:20%;
+        }
+
+    .roboto{
+        font-size:23px !important;
+        @media (min-width: $xmedium) {
+            font-size:25px !important;
+        }
+
+        @media (min-width: $medium) {
+            font-size:40px !important;
+        }
+    }
+
+    p {
+        font-family: $bebasregular;
+        font-size: 30px !important;
+        padding-left:0%;
+        position:absolute;
+        left:30%;
+        top:0%;
+        right:30%;
+        text-align:center;
+
+        @media(min-width: $large-laptop){
+            font-size: 50px !important;
+        }
+    }
+}
+
+
+
+
+
+
+
 
 .map {
     color: $white;
@@ -143,58 +373,16 @@ header {
     }
 }
 
-.half-half {
-    .circle-text {
-        position: absolute;
-        padding-top: $padding-v-xxlarge;
-    }
-    //
-    //     .circle-container {
-    // position: relative;
-    // top: 0px;
-    // max-height: 600px;
-    //     }
-    .crcl {
-        position: relative;
 
-        svg {
-            max-height: 600px;
-        }
-    }
 
-    h3 {
-        font-family: $bebasbook;
-        font-size: 60px;
-        line-height: 1;
-        max-width: 40%;
-        padding-left: 7%;
-        padding-top: $padding-v-small;
-        padding-bottom: $padding-v-small;
 
-        span {
-            font-family: $bebasregular;
-        }
 
-        @media (min-width: $xxsmall) {
-          font-size: 100px;
-            padding-top: $padding-v-large;
-            padding-bottom: $padding-v-large;
-        }
 
-        @media (min-width: $large) {
-            font-size: 150px;
 
-        }
-    }
-}
 
 .donor-card {
     color: $white;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: $padding-v-small;
-    padding-bottom: $padding-v-small;
-
+    padding: $padding-v-small 5%;
     @media (min-width: $small) {
         padding-top: $padding-v-large;
         padding-bottom: $padding-v-large;
@@ -203,13 +391,13 @@ header {
     div {
         // padding-top: $padding-v-medium;
         // padding-bottom: $padding-v-medium;
-
         img {
             max-width: 50%;
         }
 
         h3 {
             font-family: $bebasbook;
+            font-size: 24px;
 
             span {
                 font-family: $bebasregular;
@@ -247,12 +435,19 @@ header {
     }
 }
 
+
+
+
+
+
+
+
+
 .anatomy {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: $padding-v-medium;
     margin-bottom: -25px;
-
     @media (min-width: $xsmall) {
         margin-bottom: -45px;
     }
@@ -276,35 +471,57 @@ header {
         }
     }
 
+    p {
+        color: $white;
+        margin-top: 80px;
+        position: absolute;
+        background-color: $grey;
+        padding: 20px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: -50px;
+
+        @media (min-width:$laptop){
+            margin-top: 125px;
+        }
+    }
+
     #anatomyguy {
         max-width: 320px;
-
-      @media (min-width: $xsmall) {
-        max-width: 600px;
+        @media (min-width: $xsmall) {
+            max-width: 600px;
+        }
     }
 
-    }
-
-    .the-organs {
-        transform-origin: center;
-    }
+    // .the-organs {
+    //     transform-origin: center !important;
+    // }
 
     #organ {
         color: red;
     }
 }
 
+
+
+
+
+
+
+
+
+
 .eight-lives {
     padding-top: $padding-v-small;
     padding-bottom: $padding-v-small;
-
     @media (min-width: $medium) {
-      padding-top: $padding-v-medium;
-      padding-bottom: $padding-v-medium;
+        padding-top: $padding-v-medium;
+        padding-bottom: $padding-v-medium;
     }
     @media (min-width: $large) {
-      padding-top: $padding-v-xlarge;
-      padding-bottom: $padding-v-xlarge;
+        padding-top: $padding-v-xlarge;
+        padding-bottom: $padding-v-xlarge;
     }
 
     h3 {
@@ -335,20 +552,17 @@ header {
     .guy {
         max-width: 11%;
         max-height: 60px;
-
         @media (min-width: $xxsmall) {
             max-height: 90px;
         }
-
         @media (min-width: $xsmall) {
             max-height: 115px;
         }
         @media (min-width: $small) {
             max-height: 140px;
         }
-
         @media (min-width: $large) {
-          max-width: 12%;
+            max-width: 12%;
             max-height: 400px;
         }
     }
@@ -369,6 +583,14 @@ header {
         left: 30px;
     }
 }
+
+
+
+
+
+
+
+
 
 @keyframes ekgbump{
     0%  {opacity:1}
@@ -436,12 +658,13 @@ header {
     }
 }
 
-#text-content{ 
-    p{
-        font-family:$bebasregular;
-        font-size:18pt !important;
-    }
-}
+
+
+
+
+
+
+
 
 .signed-up {
     padding-top: $padding-v-large;
@@ -487,7 +710,7 @@ header {
         font-family: $bebasbook;
         line-height: 1;
         @media (min-width: $medium) {
-            margin-bottom: -50px;
+            margin-bottom: -40px;
         }
     }
 
@@ -500,9 +723,791 @@ header {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+footer {
+  position: relative;
+    margin-top: 85px;
+    width: 100%;
+    height: 150px;
+    background-color: $red;
+    padding-left: 7%;
+    padding-right: 7%;
+
+    h3 {
+        font-family: $bebasbold;
+        @media (min-width: $medium) {
+            font-size: 50px;
+        }
+    }
+
+    .footer-block {
+        color: $white;
+        margin-top: -85px;
+        margin-bottom: 30px;
+        padding: 30px 10px;
+        width: 30%;
+        float: left;
+        max-height: 125px;
+
+        &:nth-child(2) {
+            margin: -85px 5%;
+            display: block;
+        }
+
+        &:last-child {
+            float: right;
+        }
+
+        p {
+            font-size: 14px !important;
+            text-align: center;
+            @media (min-width: $medium) {
+                font-size: 20px !important;
+            }
+        }
+        @media (min-width: $medium) {
+            max-height: 300px;
+        }
+    }
+
+    li {
+      list-style: none;
+      display: inline;
+    }
+
+    img {
+        width: 35px;
+        margin-left: 25px;
+    }
+}
+
+.social-media {
+      height:20px;
+      width:20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 #webPreview{
-    overflow:scroll;
-    height:500px;
-    width:90%;
-    margin-left:5%;
+
+    h3{
+        color:$white !important;
+        font-size:40px !important;
+        text-align:center !important;
+        max-width:100% !important;
+
+        span{
+            color:$white !important;
+        }
+    }
+
+    @media (min-width: $large) {
+            height:50% !important;
+    }
+
+    .red-bg {
+    background-color: $red;
+    // width: 50%;
+
+    @media(min-width:$tablet){
+        height: 920px !important;
+    }
+
+    @media(min-width:$laptop){
+        height: 1200px !important;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        float: left;
+        color: $white;
+        }
+    }
+
+    .white-bg {
+    background-color: $white;
+    // width: 50%;
+    height: 920px !important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    color: $black;
+
+    @media(min-width:$laptop){
+        height:1200px !important;
+        max-height:100%;
+    }
+    }
+
+    .half-half {
+
+    height: 1000px;
+
+    .circle-text {
+        position: absolute;
+        padding-top: $padding-v-xxlarge;
+    }
+    //
+    //     .circle-container {
+    // position: relative;
+    // top: 0px;
+    // max-height: 600px;
+    //     }
+    .crcl {
+        position: relative;
+
+        svg {
+            max-height: 600px;
+        }
+    }
+
+    h3 {
+        font-family: $bebasbook;
+        font-size: 100px;
+        line-height: 1;
+        max-width: 40%;
+        padding-left: 7%;
+        padding-top:10%;
+
+        span {
+            font-family: $bebasregular;
+        }
+
+        @media(min-width:$tablet){
+            font-size:100px !important;
+            line-height:120% !important;
+            padding-top:52% !important;
+        }
+
+        @media (min-width: $laptop) {
+            font-size: 150px !important;
+            text-align:left !important;
+            padding-top:40% !important;
+        }
+    }
+    }
+
+    #text-content{
+
+    @media( min-width:$laptop){
+        height:920px !important;
+    }
+
+    input{
+        padding-top:-50% !important;
+        padding-bottom:0% !important;
+        width:100px;
+        margin-left:37%;
+        text-align:center;
+
+        @media(min-width:$laptop){
+        margin-left:40%;
+    }
+    }
+
+    padding-top:2% !important;
+
+    .roboto{
+        font-size:20px !important;
+    }
+
+    p {
+        font-family: $bebasregular;
+        font-size: 20px !important;
+        padding-left:0%;
+        padding-top:0% !important;
+        padding-bottom:1% !important;
+        position:static;
+
+        @media (min-width: $large) {
+            font-size: 20px !important;
+        }
+    }
+    }
+
+    .map {
+    color: $white;
+    padding-top: $padding-v-small;
+    padding-bottom: $padding-v-small;
+
+    h3{
+
+        padding-left:0%;
+        @media(min-width:$tablet){
+            font-size:50px !important;
+            line-height:120% !important;
+        }
+    }
+
+    span {
+        color: $red;
+    }
+
+    input{
+        margin-left:12%;
+
+        @media (min-width:$large-mobile){
+            margin-left:15%;
+        }
+
+        @media(min-width:$tablet){
+            height:40px !important;
+            font-size:35px !important;
+            width:20% !important;
+            padding-left:5% !important;
+            margin-left:40%;
+        }
+
+        @media(min-width:$laptop){
+            padding-left:7% !important;
+        }
+
+        @media(min-width:$large-laptop){
+            padding-left:7.5% !important;
+        }
+
+    }
+
+    h3 {
+        font-family: $bebasbook;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align:center !important;
+
+        span {
+            font-family: $bebasregular;
+        }
+        @media (min-width: $xxsmall) {
+            font-size: 34px;
+            padding-top: $padding-v-small;
+            padding-bottom: $padding-v-small;
+        }
+        @media (min-width: $xsmall) {
+            font-size: 50px;
+        }
+        @media (min-width: $small) {
+            font-size: 75px;
+        }
+        @media (min-width: $large) {
+            font-size: 100px;
+            padding-top: $padding-v-large;
+            padding-bottom: $padding-v-large;
+        }
+    }
+
+    p {
+        padding-left:0%;
+    }
+}
+
+}
+
+
+
+
+
+
+
+label{
+    font:normal $medium-head $bebasbold !important;
+}
+
+.white-bg{
+    form{
+        padding-top:5%;
+    }
+}
+
+.greeting{
+            color:$red;
+        }
+
+
+
+
+
+
+
+
+.half-half{
+    .black-bg{
+         background-color: $black;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        float: left;
+        color: $white;
+
+        a{
+        font-family: $bebasbook;
+        color:$red;
+        font-size:100px;
+        margin-top:5%;
+        text-align:center;
+
+        @media (min-width:$laptop){
+            font-size:40px !important;
+            margin-top:0% !important;
+            padding-top:5% !important;
+        }
+
+        @media (min-width:$large-laptop){
+            font-size: 50px !important;
+            margin-top:0% !important;
+            padding-top:0% !important;
+        }
+
+        &:hover{
+            color:$white;
+        }
+
+        span {
+        color: $red;
+        }
+
+        h2{
+            font-size:10px !important;
+        }
+
+
+    }
+    }
+    
+
+    .selection{
+        padding-top:0;
+
+        @media (min-width: $laptop) {
+          padding-top:5%;
+        }
+    }
+
+    .editWebsiteContent{
+        color:$white !important;
+        font-size:100px !important;
+        @media (min-width: $large) {
+          font-size:40px !important;
+        }
+
+         &:hover{
+            color:$red !important;
+        }
+    }
+
+    h2 {
+        font-family: $bebasbook;
+        padding-left: 7%;
+        padding-top: 0;
+        padding-bottom: 0;
+        color:$white;
+        font-size: 70px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+        span {
+            font-family: $bebasregular;
+        }
+        @media (min-width: $large) {
+            font-size: 50px;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.button{
+    background-color:$red !important;
+    font-size:30px !important;
+
+    @media (min-width: $laptop) {
+            font-size: 15px !important;
+        }
+}
+
+.errorMessage{
+    color:$black !important;
+
+    span{
+        color:$red;
+    }
+}
+
+.h1Header{
+    color:$red !important;
+    font-size:100px;
+    text-align:center;
+    font-family: $bebasregular;
+    padding-top:2%;
+
+    @media (min-width: $large) {
+            font-size: 30px !important;
+        }
+}
+
+.blackH2{
+        color:$white;
+        font-size:40px;
+        text-align:center;
+
+        @media (min-width: $large) {
+            font-size: 20px !important;
+        }
+}
+
+.blackH2Red{
+        color:$red;
+        font-size:20px;
+        text-align:center;
+}
+
+.blackLabel{
+    color:$white;
+}
+
+.blackLabelRed{
+    color:$red;
+}
+
+.editUsersH2{
+    margin-top:3%;
+    font-size:40px !important;
+}
+
+.editUserH3{
+    padding-top:7%;
+    padding-bottom:10%;
+
+    h3{
+    @media(min-width:$tablet){
+        font-size:120px !important;
+        text-align:left !important;
+        line-height:220px !important;
+    }}
+}
+
+.bottomEditContent{
+    padding-top:5%;
+
+    clear:both;
+
+    a{
+        @media(min-width:$laptop){
+            font-size:30px !important;
+        }
+    }
+
+    span{
+        color:$red;
+    }
+
+    h3{
+        font-size:50px;
+        color:$white;
+        text-align:center;
+
+        @media(min-width:$tablet){
+        margin-bottom:5% !important;
+        }
+    }
+
+    select{
+        height:70px !important;
+        line-height:50px !important;
+        font-size:20px !important;
+        @media (min-width: $large) {
+            height:40px !important;
+            line-height:20px !important;
+            font-size:18px !important;
+        }
+    }
+
+    input{
+        font-size:25px !important;
+    }
+
+    .roboto{
+        font-size:30px;
+    }
+}
+
+.inputContent1{
+        height:150px !important;
+        color:$red !important;
+        font-size:100px !important;
+        width:250px !important;
+        padding-top:-50% !important;
+        padding-bottom:0% !important;
+        padding-left:12% !important;
+}
+
+.checkbox{
+    height:20px;
+    width:20px;
+    float:right;
+}
+
+
+
+
+
+
+
+
+
+
+#sharables {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top: 0;
+  overflow-y:scroll;
+  z-index: 9999;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  padding-top: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+
+  h3 {
+    color: $white;
+    font-family: $bebasbold;
+    font-size: $medium-head;
+  }
+
+  .sharable {
+    padding-top:18%;
+
+    @media(min-width:$tablet){
+        padding-top:5%;
+    }
+
+    @media(min-width:$laptop){
+        padding-top:2%;
+    }
+  }
+
+  #twitterIcon{
+    padding-top:20%;
+
+    @media(min-width:$tablet){
+        padding-top:6%;
+    }
+
+    @media(min-width:$laptop){
+        padding-top:3%;
+    }
+  }
+
+  #facebookIcon{
+  }
+
+  #pinterestIcon{
+  }
+
+  #instagramIcon{
+  }
+}
+
+#fbEmbedPost{
+    margin-top:200px;
+    max-height:400px;
+    display:none;
+    clear:both;
+    overflow-x:hidden;
+    overflow-y:scroll;
+
+    @media(min-width:$reg-mobile){
+        max-height:300px;
+    }
+
+    @media(min-width:$large-laptop){
+        max-height:800px;
+    }
+}
+
+#twitterEmbedPost{
+    margin-top:200px;
+    max-height:400px;
+    display:none;
+    clear:both;
+    overflow-x:hidden;
+    overflow-y:scroll;
+
+    twitterwidget{
+    width: 33.33333% !important;
+    float:left !important;
+
+    @media(min-width:$tablet){
+            max-width:30% !important;
+            display:block;
+            margin-left:5%;
+            float:left;
+            max-height:289.331px !important;
+        }
+
+        @media(min-width:$laptop){
+            margin-right:3%;
+            max-height:289px !important;
+            width:30% !important;
+            margin-left:0%;
+            margin-top:50px !important;
+        }
+    }
+
+    @media(min-width:$reg-mobile){
+        max-height:300px;
+    }
+
+    @media(min-width:$tablet){
+        padding-left:9%;
+    }
+
+    @media(min-width:$laptop){
+        padding-left:4%;
+        margin-top:0px;
+        max-height:350px;
+    }
+}
+
+#instagramEmbedPost{
+    margin-top:200px;
+    max-height:320px;
+    display:none;
+    clear:both;
+    overflow-x:hidden;
+    overflow-y:scroll;
+
+    @media(min-width:$reg-mobile){
+        max-height:300px;
+    }
+
+    @media(min-width:$laptop){
+        padding-left:12%;
+        margin-top:150px;
+        max-height:350px;
+    }
+
+    @media(min-width:1400px){
+        padding-left:23%;
+        margin-top:200px;
+        max-height:400px;
+    }
+}
+
+#pinterestEmbedPost{
+    margin-top:200px;
+    max-height:400px;
+    display:none;
+    clear:both;
+    overflow-x:hidden;
+    overflow-y:scroll;
+
+    @media(min-width:$reg-mobile){
+        max-height:300px;
+    }
+
+    @media(min-width:$large-mobile){
+        padding-left:9%;
+    }
+
+    @media(min-width:$tablet){
+        padding-left:11%;
+    }
+
+    @media(min-width:$laptop){
+        padding-left:8%;
+    }
+
+    span{
+        margin-bottom:5%;
+
+        span{
+            margin-bottom:0%;
+        }
+
+        @media(min-width:$tablet){
+        margin-right:3%;
+
+            span{
+                margin-right:0%;
+            }
+        }
+
+        @media(min-width:$laptop){
+            margin-right:0%;
+        }
+    }
+}
+
+iframe{
+        padding-top:0%;
+        padding-bottom:2%;
+}
+
+
+.accordion{
+    h2{
+        padding-bottom:8%;
+        transition: 0.4s;
+
+        &:after {
+            content: '\02795';
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+    }
+
+    .active{
+            color:$red;
+            &:after {
+                content: "\2796";
+                color: $red;
+            }
+        }
+
+    form{
+        display:none;
+    }
+}
+
+.createUser{
+    select{
+        height:70px !important;
+        line-height:50px !important;
+        font-size:20px !important;
+        @media (min-width: $large) {
+            height:40px !important;
+            line-height:20px !important;
+            font-size:18px !important;
+        }
+}
 }

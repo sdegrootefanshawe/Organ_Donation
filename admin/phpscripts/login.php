@@ -6,7 +6,7 @@
 		require_once("connect.php");
 
 			//Set Timezone
-			date_default_timezone_set('America/toronto');
+			date_default_timezone_set('America/Detroit');
 
 
 			$username = mysqli_real_escape_string($link,$username);
@@ -153,7 +153,7 @@
 					$updateAttempts = "UPDATE tbl_user SET user_attempts = user_attempts + 1  WHERE user_uname = '{$username}'";
 					$updateQuery = mysqli_query($link, $updateAttempts);
 
-					$message ="Wrong username or password. You have ".(2- $attempts)." attempts left.";
+					$message ="Wrong username or password.<br> You have <span>".(2- $attempts)."</span> attempts left.";
 					return $message;
 				}
 			}

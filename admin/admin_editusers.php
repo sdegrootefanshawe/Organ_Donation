@@ -1,6 +1,5 @@
 <?php
 
-
 	require_once('phpscripts/init.php');
 	confirm_logged_in();//can be commented out when checking css and stuff. Uncomment when it goes live!!!
 
@@ -24,15 +23,23 @@
 		$message = $result;
 	}
 ?>
-<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/app.css"/>
 <title>Create New User</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="../css/foundation.css" />
+<script src="../greensock/src/minified/TweenMax.min.js"></script>
+<script src="../js/ScrollToPlugin.min.js"></script>
+<script src="../js/DrawSVGPlugin.min.js"></script>
+<script src="../js/ScrambleTextPlugin.min.js"></script>
+<script src="../js/MorphSVGPlugin.min.js"></script>
+<script src="../js/CSSPlugin.min.js"></script>
 </head>
-<body>
-	<h1>Edit Users</h1>
+<body class="row black-bg">
+	<h1 class="h1Header">Edit Users</h1>
 
 	<?php
 		if(!empty($message)){
@@ -41,6 +48,8 @@
 		}
 	?>
 
+	<div class="large-8 large-offset-2 accordion end column">
+
 	<?php
                 if(! is_string($popForm)){
                     //echo "Object";
@@ -48,25 +57,25 @@
                     	
                     	echo "
 
-                    	<h2><span style=\"text-transform: capitalize;\">{$row['user_fname']}</span><span style=\"text-transform: capitalize;\"> {$row['user_lname']}</span></h2>
+                    	<h2 class=\"roboto blackH2 editUsersH2\"><span style=\"text-transform: capitalize;\">{$row['user_fname']}</span><span style=\"text-transform: capitalize;\"> {$row['user_lname']}</span></h2>
 
                     	<form action=\"admin_editusers.php\" method=\"post\">
 
-						<label>First Name:</label>
-						<input type=\"text\" name=\"fname\" value=\"{$row['user_fname']}\">
+						<label class=\"blackLabel\">First Name:</label>
+						<input class=\"roboto\" type=\"text\" name=\"fname\" value=\"{$row['user_fname']}\">
 
-						<label>Last Name:</label>
-						<input type=\"text\" name=\"lname\" value=\"{$row['user_lname']}\">
+						<label class=\"blackLabel\">Last Name:</label>
+						<input class=\"roboto\" type=\"text\" name=\"lname\" value=\"{$row['user_lname']}\">
 
-						<label>Username:</label>
-						<input type=\"text\" name=\"username\" value=\"{$row['user_uname']}\">
+						<label class=\"blackLabel\">Username:</label>
+						<input class=\"roboto\" type=\"text\" name=\"username\" value=\"{$row['user_uname']}\">
 
-						<label>Email:</label>
-						<input type=\"text\" name=\"email\" value=\"{$row['user_email']}\">
+						<label class=\"blackLabel\">Email:</label>
+						<input class=\"roboto\" type=\"text\" name=\"email\" value=\"{$row['user_email']}\">
 
 						<input type=\"hidden\" name=\"suspend\" value=\"yes\" />
 
-						<select name=\"lvllist\">
+						<select class=\"roboto\" name=\"lvllist\">
 							<option value=\"admin\">Web Admin</option>
 							<option value=\"master\">Web Master</option>
 						</select>
@@ -75,19 +84,22 @@
 
 						if($row['user_attempts'] > 2 || $row['user_suspend'] === 'yes'){
 
-						echo "<br><label>This user is locked out or suspended, would you like to release the user?</label>
-						<input type=\"checkbox\" name=\"suspend\" value=\"2\">";
+						echo "<br><label class=\"blackLabel\">This user is locked out or suspended, would you like to release the user?</label>
+						<select class=\"roboto\" name=\"suspend\">
+							<option value=\"1\">No</option>
+							<option value=\"2\">Yes</option>
+						</select>";
 
 						}
 
 						echo "<br>
-						<label>Would you like to delete this user?</label>
-						<select name=\"delete\">
+						<label class=\"blackLabelRed\">Would you like to delete this user?</label>
+						<select class=\"roboto\" name=\"delete\">
 							<option value=\"no\">No</option>
 							<option value=\"yes\">Yes</option>
 						</select>
 						<br><br>
-						<input type=\"submit\" name=\"submit\" value=\"Save Changes to User\">
+						<input class=\"button medium-12 column\" type=\"submit\" name=\"submit\" value=\"Save Changes to User\">
 
 						</form>
 
@@ -99,8 +111,11 @@
 
             ?>
 
+            <a class="button large-12 column" href="admin_index.php">Back to login page</a>
 
-	<a href="admin_index.php">Back to login page</a>
+        </div>
+
+        <script src="../js/main.js"></script>
 
 </body>
 </html>

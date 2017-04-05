@@ -18,6 +18,13 @@ $medium-head:54px;
 $large-head:74px;
 $xlarge-head:150px;
 
+.roboto{
+    font-family:'robotolight';
+    letter-spacing:-1px;
+    font-size: 13pt;
+    text-transform:uppercase;
+}
+
 
 @font-face {
     font-family: bebasthin;
@@ -43,4 +50,25 @@ $xlarge-head:150px;
     font-family: bebasbold;
     src: url("../fonts/BebasNeueBold.otf");
     font-weight: 700;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }

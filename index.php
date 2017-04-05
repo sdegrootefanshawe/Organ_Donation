@@ -22,24 +22,190 @@
     <script src="js/ScrambleTextPlugin.min.js"></script>
     <script src="js/MorphSVGPlugin.min.js"></script>
     <script src="js/CSSPlugin.min.js"></script>
+    <style></style>
 </head>
 
 <body>
-    <header>
+    <header id="panel">
         <h1 class="hidden">Ask me about my organs</h1>
-        <img src="images/heart_text.jpg" alt="">
-
-        <div class="row">
-            <a class="banner-link column" href="http://www.beadonor.ca" target="_blank">be<span>a</span>donor.ca</a>
-        </div>
+        <a href="#" id="panel-click"><img id="banner-image" src="images/heart_text_click.jpg" alt="click me"></a>
     </header>
 
-    <section class="">
+      <section id="sharables" class="sharablesSection">
+        <div class="row">
+          <div class="column">
+            <!-- <h3 class="float-left">Spread the word</h3> -->
+            <h3 class="float-left">share</h3>
+            <a id="closeit" class="small-1 float-right" href="javascript:void(0)"><img  class="close float-right" src="images/close_white.svg" alt=""></a>
+          </div>
+
+          	<div id="socialMediaIconsTop">
+
+          		<div id="facebookIcon" class="sharable small-3 medium-2 medium-offset-2 large-1 large-offset-4 column">
+            		<a href="javascript:void(0)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 				viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+					<style type="text/css">
+						.fbFill{fill:#FFFFFF;}
+					</style>
+				<g id="Icons">
+				<g id="Black" transform="translate(-200.000000, -160.000000)">
+				<path id="Facebook" class="fbFill" d="M225.6,208h-23c-1.5,0-2.6-1.2-2.6-2.6v-42.7c0-1.5,1.2-2.6,2.6-2.6h42.7
+							c1.5,0,2.6,1.2,2.6,2.6v42.7c0,1.5-1.2,2.6-2.6,2.6h-12.2v-18.6h6.2l0.9-7.2h-7.2v-4.6c0-2.1,0.6-3.5,3.6-3.5l3.8,0v-6				.5
+							c-0.7-0.1-2.9-0.3-5.6-0.3c-5.5,0-9.3,3.4-9.3,9.6v5.3h-6.3v7.2h6.3V208L225.6,208z"/>
+					</g>
+				</g>
+				</svg></a>
+          		</div>
+
+          		<div id="twitterIcon" class="sharable small-3 medium-2 large-1 column">
+            		<a href="javascript:void(0)">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 						viewBox="0 0 48 40" style="enable-background:new 0 0 48 40;" xml:space="preserve">
+							<style type="text/css">
+								.twitterFill{fill:#FFFFFF;}
+							</style>
+					<g id="Icons">
+					<g id="Black" transform="translate(-300.000000, -164.000000)">
+					<path id="Twitter" class="twitterFill" d="M348,168.7c-1.8,0.8-3.7,1.3-5.7,1.6c2-1.2,3.6-3.2,4.3-5.6c-1.9,1.2-4,2-6.3,2.4
+					c-1.8-2-4.4-3.2-7.2-3.2c-5.4,0-9.8,4.5-9.8,10.1c0,0.8,0.1,1.6,0.3,2.3c-8.2-0.4-15.4-4.4-20.3-10.6c-0.8,1.5-1.3,3.2-1.3,5.1
+					c0,3.5,1.7,6.6,4.4,8.4c-1.6,0-3.1-0.5-4.5-1.3v0.1c0,4.9,3.4,9,7.9,9.9c-0.8,0.2-1.7,0.4-2.6,0.4c-0.6,0-1.3-0.1-1.9-0.2
+					c1.3,4,4.9,6.9,9.2,7c-3.4,2.7-7.6,4.3-12.2,4.3c-0.8,0-1.6,0-2.3-0.1c4.4,2.9,9.5,4.5,15.1,4.5c18.1,0,28-15.4,28-28.7
+					c0-0.4,0-0.9,0-1.3C345,172.5,346.7,170.8,348,168.7"/>
+					</g>
+					</g>
+					</svg>
+					</a>
+          		</div>
+
+          		<div id="pinterestIcon" class="sharable small-3 medium-2 large-1 column">
+
+          			<a href="javascript:void(0)">
+          			<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 				viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+					
+						<style type="text/css">
+							.pinterestFill{fill:#FFFFFF;}
+						</style>
+
+						<path class="pinterestFill" d="M111.4,324.5l32-136.7c0,0-16.3-33.5,0.8-71.7c15.7-35,73.7-27.4,66,14.1s-17.7,68-17.7,68
+						s-14.5,39.9,20.1,49.9s54.3-17.7,54.3-17.7s38.9-39.4,30-117.6S188.9,36.4,163,49.4s-37.3,19-50.6,38.9s-26.7,51-17,86.2
+						c0,0,3.9,13.1,14.1,25.7c0.5,0.7,0.9,1.4,1,2.3c0.4,2.9,0.1,10.7-6.9,28.3c0,0-4.2,5.5-12.1,0.8s-29.9-19.5-35.7-40.5
+						s-10.7-39.4-5.2-69.1s27.5-72.5,71.8-96.8s93.5-26.1,139.9-12.7s81.2,60.5,85.9,86.3s14.1,62.3-15.9,127.9
+						c-30.1,65.6-121.8,83.7-156.2,36.6l-17,62.3c0,0-12.7,41-40.6,72.8c0,0-2.4,2.4-3.9-0.2C113,395.7,108.5,354.9,111.4,324.5z"/>
+
+					</svg>
+					</a>
+          		</div>
+
+          		<div id="instagramIcon" class="sharable small-3 medium-2 large-1 end column">
+
+          		<a href="javascript:void(0)">
+          			<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 				viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+
+						<style type="text/css">
+							.instagramFill{fill:#FFFFFF;}
+						</style>
+
+					<g>
+
+						<path class="instagramFill" d="M200,299.1c-54.6,0-99.1-44.5-99.1-99.1c0-54.6,44.5-99.1,99.1-99.1c54.6,0,99.1,44.5,99.1,99.1
+						C299.1,254.6,254.6,299.1,200,299.1z M200,131.6c-37.7,0-68.4,30.7-68.4,68.4s30.7,68.4,68.4,68.4s68.4-30.7,68.4-68.4
+						S237.7,131.6,200,131.6z"/>
+						<circle class="instagramFill" cx="303.2" cy="96" r="22.4"/>
+						<path class="instagramFill" d="M280.1,393.6H119.9c-62.6,0-113.6-51-113.6-113.6V119.9c0-62.6,51-113.6,113.6-113.6h160.1
+						c62.6,0,113.6,51,113.6,113.6v160.1C393.6,342.7,342.7,393.6,280.1,393.6z M119.9,37C74.2,37,37,74.2,37,119.9v160.1
+						c0,45.7,37.2,82.9,82.9,82.9h160.1c45.7,0,82.9-37.2,82.9-82.9V119.9c0-45.7-37.2-82.9-82.9-82.9H119.9z"/>
+
+					</g>
+				</svg>
+				</a>
+          		</div>
+
+          	</div>
+
+          	<div id="fbEmbedPost">
+
+          		<iframe class="medium-6 large-4 column" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faskmeaboutmeorgans%2Fposts%2F1893588404196454%3A0&width=500" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    			<iframe class="medium-6 large-4 column" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faskmeaboutmeorgans%2Fposts%2F1893588230863138%3A0&width=500" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    			<iframe class="medium-6 large-4 column" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faskmeaboutmeorgans%2Fposts%2F1893588180863143%3A0&width=500" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    			<iframe class="medium-6 large-4 column" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faskmeaboutmeorgans%2Fposts%2F1893588137529814%3A0&width=500" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    			<iframe class="medium-6 large-4 column" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faskmeaboutmeorgans%2Fposts%2F1893587000863261%3A0&width=500" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    			<iframe class="medium-6 large-4 column" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faskmeaboutmeorgans%2Fposts%2F1893586834196611%3A0&width=500" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    		</div>
+
+    		<div id="twitterEmbedPost">
+
+    			<blockquote class="twitter-tweet medium-6 large-4 column" data-lang="en"><p lang="en" dir="ltr">Learn more at <a href="https://t.co/J6lUwi4fQP">https://t.co/J6lUwi4fQP</a> <a href="https://twitter.com/hashtag/askmeaboutmyorgans?src=hash">#askmeaboutmyorgans</a> <a href="https://t.co/Py7P2m3HBD">pic.twitter.com/Py7P2m3HBD</a></p>&mdash; askmeaboutmyorgans (@askmeaboutmyorg) <a href="https://twitter.com/askmeaboutmyorg/status/848006142005563393">April 1, 2017</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				<blockquote class="twitter-tweet medium-6 large-4 column" data-lang="en"><p lang="en" dir="ltr">Learn more at <a href="https://t.co/J6lUwi4fQP">https://t.co/J6lUwi4fQP</a>  <a href="https://twitter.com/hashtag/askmeaboutmyorgans?src=hash">#askmeaboutmyorgans</a> <a href="https://t.co/56DAQnljSu">pic.twitter.com/56DAQnljSu</a></p>&mdash; askmeaboutmyorgans (@askmeaboutmyorg) <a href="https://twitter.com/askmeaboutmyorg/status/848006229821714432">April 1, 2017</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				<blockquote class="twitter-tweet medium-6 large-4 column" data-lang="en"><p lang="en" dir="ltr">Learn more at <a href="https://t.co/J6lUwi4fQP">https://t.co/J6lUwi4fQP</a>  <a href="https://twitter.com/hashtag/askmeaboutmyorgans?src=hash">#askmeaboutmyorgans</a> <a href="https://t.co/a1Dh0xjPxm">pic.twitter.com/a1Dh0xjPxm</a></p>&mdash; askmeaboutmyorgans (@askmeaboutmyorg) <a href="https://twitter.com/askmeaboutmyorg/status/848006262637940736">April 1, 2017</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				<blockquote class="twitter-tweet medium-6 large-4 column" data-lang="en"><p lang="en" dir="ltr">Learn more at <a href="https://t.co/J6lUwi4fQP">https://t.co/J6lUwi4fQP</a>  <a href="https://twitter.com/hashtag/askmeaboutmyorgans?src=hash">#askmeaboutmyorgans</a> <a href="https://t.co/NCJqFzLt3F">pic.twitter.com/NCJqFzLt3F</a></p>&mdash; askmeaboutmyorgans (@askmeaboutmyorg) <a href="https://twitter.com/askmeaboutmyorg/status/848006292480438273">April 1, 2017</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				<blockquote class="twitter-tweet medium-6 large-4 column" data-lang="en"><p lang="en" dir="ltr">Learn more at <a href="https://t.co/J6lUwi4fQP">https://t.co/J6lUwi4fQP</a>  <a href="https://twitter.com/hashtag/askmeaboutmyorgans?src=hash">#askmeaboutmyorgans</a> <a href="https://t.co/N3Bkmn8e4R">pic.twitter.com/N3Bkmn8e4R</a></p>&mdash; askmeaboutmyorgans (@askmeaboutmyorg) <a href="https://twitter.com/askmeaboutmyorg/status/848006321085480960">April 1, 2017</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				<blockquote class="twitter-tweet medium-6 large-4 column" data-lang="en"><p lang="en" dir="ltr">Learn more at <a href="https://t.co/J6lUwi4fQP">https://t.co/J6lUwi4fQP</a>  <a href="https://twitter.com/hashtag/askmeaboutmyorgans?src=hash">#askmeaboutmyorgans</a> <a href="https://t.co/TiEq3KvR3E">pic.twitter.com/TiEq3KvR3E</a></p>&mdash; askmeaboutmyorgans (@askmeaboutmyorg) <a href="https://twitter.com/askmeaboutmyorg/status/848006352790319105">April 1, 2017</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    		</div>
+
+    		<div id="pinterestEmbedPost">
+    			<a class="pinterestPin" data-pin-do="embedPin" href="https://www.pinterest.com/pin/635077984923984702/"></a>
+
+    			<a class="pinterestPin" data-pin-do="embedPin" href="https://www.pinterest.com/pin/635077984923984741/"></a>
+
+    			<a class="pinterestPin" data-pin-do="embedPin" href="https://www.pinterest.com/pin/635077984923984748/"></a>
+
+    			<a class="pinterestPin" data-pin-do="embedPin" href="https://www.pinterest.com/pin/635077984923984756/"></a>
+
+    			<a class="pinterestPin" data-pin-do="embedPin" href="https://www.pinterest.com/pin/635077984923984760/"></a>
+
+    			<a class="pinterestPin" data-pin-do="embedPin" href="https://www.pinterest.com/pin/635077984923984765/"></a>
+    		</div>
+
+    		<div id="instagramEmbedPost">
+
+    			<blockquote class="instagram-media medium-6 column" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:31.342592592592595% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BScZ-IFg-MD/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#askmeaboutmyorgans</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Organ Donation Ontario (@organdonationontario) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-04T00:47:01+00:00">Apr 3, 2017 at 5:47pm PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+    			<blockquote class="instagram-media medium-6 column" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:30.694444444444446% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BScbCLugN_Y/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#askmeaboutmyorgans</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Organ Donation Ontario (@organdonationontario) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-04T00:56:18+00:00">Apr 3, 2017 at 5:56pm PDT</time></p></div></blockquote>
+				<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+				<blockquote class="instagram-media medium-6 column" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:30.694444444444446% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BScbFPGAQh7/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#askmeaboutmyorgans</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Organ Donation Ontario (@organdonationontario) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-04T00:56:43+00:00">Apr 3, 2017 at 5:56pm PDT</time></p></div></blockquote>
+				<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+				<blockquote class="instagram-media medium-6 column" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:30.694444444444446% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BScbIwfAcG6/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#askmeaboutmyorgans</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Organ Donation Ontario (@organdonationontario) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-04T00:57:12+00:00">Apr 3, 2017 at 5:57pm PDT</time></p></div></blockquote>
+				<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+				<blockquote class="instagram-media medium-6 column" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:30.694444444444446% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BScbLR4A075/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#askmeaboutmyorgans</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Organ Donation Ontario (@organdonationontario) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-04T00:57:33+00:00">Apr 3, 2017 at 5:57pm PDT</time></p></div></blockquote>
+				<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+				<blockquote class="instagram-media medium-6 column" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:30.694444444444446% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BScbNWXgVkO/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#askmeaboutmyorgans</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Organ Donation Ontario (@organdonationontario) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-04T00:57:50+00:00">Apr 3, 2017 at 5:57pm PDT</time></p></div></blockquote>
+				<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+    		</div>
+          
+        </div>
+    </section>
+
+   <div class="row expanded collapse follower">
+      <a class="text-center column" href="http://www.beadonor.ca" target="_blank">Convinced? Register Here!</a>
+    </div>
+
+    <section class="thanks-asking">
         <h2 class="hidden">Thanks for asking</h2>
         <img src="images/thanks_asking.jpg" alt="">
-        <div class="row">
-
-        </div>
     </section>
 
     <section class="grey-container map">
@@ -53,11 +219,11 @@
             </div>
             <div class="mapsvg small-6 float-right column">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
-			<style type="text/css">
-  				.st01{fill:#565656;}
-  				.st11111{fill:#ffffff;}
-			</style>
-			<g id="map">
+<style type="text/css">
+  .st01{fill:#565656;}
+  .st11111{fill:#ffffff;}
+</style>
+<g id="map">
   <path class="st01" d="M370.4,241.9c0,0,0.1-0.1,0.1-0.2l-3-1.3l-0.7-6c0,0-3.4-1-8.7,1.2c-2.3,2.8-3.4,2.9-4.1,3.1
     c-1.7,1.7-5.5,4.5-6,5.5c-0.4,1-1.1,3.5-2.2,2.6c-1.2-0.9-6.5-3.6-6.5-0.1c-0.2,1.2-1.2,1.5-2.1,1.1c-0.9-0.4-2.6-0.6-3.3-0.3
     c-0.7,0.3-1.6-0.1-2-1.2c-0.4-1.1-0.7-1.7-1.7-2c-1-0.4-1.3-1.2-1.4-2.2c-0.1-1-3.4-1.6-2.7-0.3c0.7,1.3,0.8,2.7-0.7,2.5
@@ -153,7 +319,7 @@
     c0.4-0.8,1.2-0.2,1.9,0.1c0.7,0.3,0.8-0.5,1.1-1c0.3-0.5,0.1-1,0.1-1.3C228.7,268.9,228.7,268.5,228.2,268.6z"/>
   <path class="st01" d="M213.9,264.2c0.1,0.7,0.5,1.9,2.1,2.7c1,0.4,1.1,1.2,1.2,1.5c0.5,0,0.7,0,0.8-0.1c0.3-0.5,0.2-0.9,0.1-1.4
     c0.2-0.5,0.8-0.6,1.4-0.3C219.2,266,218.1,263.2,213.9,264.2z"/>
-  <polygon class="st01" points="180.1,236.5 178.5,238 178.5,238.8 179.9,239.1 182.5,238.6 184.4,237.3 184.3,236.5 181.9,236.1 	"/>
+  <polygon class="st01" points="180.1,236.5 178.5,238 178.5,238.8 179.9,239.1 182.5,238.6 184.4,237.3 184.3,236.5 181.9,236.1   "/>
   <path class="st01" d="M101.4,44.9c-15.3,22.9-41.8,62.5-46.8,69.6c-6.2,8.7-18.4,22.3-22.1,25.6l-0.4,0.3l0,0.5
     c-0.1,11.2-4.1,74.1,4.2,76.8l0.1,2l2-0.1l-0.1-2c-2.2-42.7-3.6-68.4-4.1-76.4c4-3.8,15.6-16.8,22-25.6
     c5.1-7.2,31.5-46.7,46.9-69.7l0.5-0.7l-1.7-1.1L101.4,44.9z"/>
@@ -175,35 +341,35 @@
     c0.9-0.4,3.6,0.8,4.7,1.6c0.5,0.3,1,0.5,1.5,0.3c1.1-0.3,1.6-1.7,2-2.8c0.1-0.2,0.2-0.4,0.2-0.5c0.2-0.4,1.8-1.7,2.9-2.6
     c1-0.8,2-1.7,2.7-2.4c1-0.3,2.2-0.8,4.2-3.2c3.5-1.4,6.1-1.3,7.2-1.2l0.7,5.8l2.2,1c-0.3,0.3-0.5,0.5-0.6,0.7l1.5,1.3
     c0.3-0.4,1.2-1.3,1.5-1.6l1-1l-3.7-1.7L367.8,233.7z"/>
-			</g>
-			<g id="one" class="pop">
-  			<g>
-    			<path class="st11111" d="M176.8,66c2.7,0,5-2.2,5-5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5C171.8,63.8,174,66,176.8,66z M188.1,72.3
+</g>
+<g id="one" class="pop">
+  <g>
+    <path class="st11111" d="M176.8,66c2.7,0,5-2.2,5-5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5C171.8,63.8,174,66,176.8,66z M188.1,72.3
       c0-2.5-2-4.5-4.5-4.5h-13.9c-2.5,0-4.5,2-4.5,4.5v18.2c0,1.1,0.9,2,2,2s2-0.9,2-2V73.9h0.8v44.6c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3
       V94.1h1.6v24.4c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3V73.9h0.8v16.6c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2L188.1,72.3z"/>
-  			</g>
-			</g>
-			<g id="two" class="pop">
+  </g>
+</g>
+<g id="two" class="pop">
   <g>
     <path class="st11111" d="M211.6,94c2.7,0,5-2.2,5-5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5C206.6,91.8,208.8,94,211.6,94z M222.9,100.3
       c0-2.5-2-4.5-4.5-4.5h-13.9c-2.5,0-4.5,2-4.5,4.5v18.2c0,1.1,0.9,2,2,2s2-0.9,2-2v-16.7h0.8v44.6c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3
       v-24.4h1.6v24.4c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3v-44.6h0.8v16.6c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2L222.9,100.3z"/>
   </g>
-			</g>
-			<g id="three" class="pop">
-  			<g>
-    			<path class="st11111" d="M204.6,173.8c2.7,0,5-2.2,5-5s-2.2-5-5-5c-2.7,0-5,2.2-5,5S201.8,173.8,204.6,173.8z M215.9,180.2
-     			 c0-2.5-2-4.5-4.5-4.5h-13.9c-2.5,0-4.5,2-4.5,4.5v18.2c0,1.1,0.9,2,2,2s2-0.9,2-2v-16.7h0.8v44.6c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3
-     			v-24.4h1.6v24.4c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3v-44.6h0.8v16.6c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2L215.9,180.2z"/>
-  			</g>
-			</g>
-			<g id="four" class="pop">
-  			<g>
-    			<path class="st11111" d="M273.3,192.4c2.7,0,5-2.2,5-5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5C268.3,190.2,270.5,192.4,273.3,192.4z
-      			 M284.6,198.8c0-2.5-2-4.5-4.5-4.5h-13.9c-2.5,0-4.5,2-4.5,4.5V217c0,1.1,0.9,2,2,2s2-0.9,2-2v-16.7h0.8V245c0,1.7,1.3,3,3,3
-      			c1.6,0,3-1.3,3-3v-24.4h1.6V245c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3v-44.6h0.8V217c0,1.1,0.9,2,2,2s2-0.9,2-2L284.6,198.8z"/>
-  			</g>
-			</g>
+</g>
+<g id="three" class="pop">
+  <g>
+    <path class="st11111" d="M204.6,173.8c2.7,0,5-2.2,5-5s-2.2-5-5-5c-2.7,0-5,2.2-5,5S201.8,173.8,204.6,173.8z M215.9,180.2
+      c0-2.5-2-4.5-4.5-4.5h-13.9c-2.5,0-4.5,2-4.5,4.5v18.2c0,1.1,0.9,2,2,2s2-0.9,2-2v-16.7h0.8v44.6c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3
+      v-24.4h1.6v24.4c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3v-44.6h0.8v16.6c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2L215.9,180.2z"/>
+  </g>
+</g>
+<g id="four" class="pop">
+  <g>
+    <path class="st11111" d="M273.3,192.4c2.7,0,5-2.2,5-5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5C268.3,190.2,270.5,192.4,273.3,192.4z
+       M284.6,198.8c0-2.5-2-4.5-4.5-4.5h-13.9c-2.5,0-4.5,2-4.5,4.5V217c0,1.1,0.9,2,2,2s2-0.9,2-2v-16.7h0.8V245c0,1.7,1.3,3,3,3
+      c1.6,0,3-1.3,3-3v-24.4h1.6V245c0,1.7,1.3,3,3,3c1.6,0,3-1.3,3-3v-44.6h0.8V217c0,1.1,0.9,2,2,2s2-0.9,2-2L284.6,198.8z"/>
+  </g>
+</g>
 <g id="five" class="pop">
   <g>
     <path class="st11111" d="M122,155.2c2.7,0,5-2.2,5-5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5C117,153,119.2,155.2,122,155.2z M133.3,161.5
@@ -307,27 +473,24 @@
 
             <div class="white-bg small-12 large-6 column crcl">
 
-                <div id="text-content" class="circle-text-container text-center float-center">
+            <svg class="large-12 medium-12 end column" version="1.1" id="circleGraph1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 130.7 122.8" style="enable-background:new 0 0 130.7 122.8;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:none;stroke:#ED1C24;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;opacity: 0;}
+                .st1{fill:none;stroke:#42D4B6;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;opacity: 0;}
+            </style>
+            <path id="outer1" class="st0" d="M64.2,11.1c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50c0-26.8,21.1-48.7,47.6-49.9"/>
+            <path id="inner1" class="st1" d="M63.9,20.1c23.2,0,42,18.8,42,42s-18.8,42-42,42s-42-18.8-42-42c0-22.5,17.6-40.8,39.8-42"/>
+            </svg>
+                <div id="text-content" class="text-center float-center">
                 <p><span id="firstCircleContent"></span><span id="secondCircleContent"><span></p>
             	</div>
-
-                <!-- <div class="circle-container">
-                    <svg version="1.1" id="circleGraph1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 130.7 122.8" style="enable-background:new 0 0 130.7 122.8;" xml:space="preserve">
-              <style type="text/css">
-              	.st0000{fill:none;stroke:#ED1C24;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
-              	.st1111{fill:none;stroke:#42D4B6;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
-              </style>
-              <path id="outer1" class="st0000" d="M64.2,11.1c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50c0-26.8,21.1-48.7,47.6-49.9"/>
-              <path id="inner1" class="st1111" d="M63.9,20.1c23.2,0,42,18.8,42,42s-18.8,42-42,42s-42-18.8-42-42c0-22.5,17.6-40.8,39.8-42"/>
-              </svg>
-
-                </div> -->
 
             </div>
         </div>
     </section>
 
-    <section class="grey-container donor-card">
+     <section class="grey-container donor-card">
         <h2 class="hidden">Donor Cards</h2>
         <div class="row expanded collapse">
             <h3 class="small-5 column">Did you know <br><span>that donor cards are no<br> longer used <br>in Ontario?</span></h3>
@@ -341,8 +504,8 @@
     <section class="anatomy row expanded collapse">
         <h2 class="hidden">Anatomical Interaction</h2>
         <div>
-            <h3 class="text-center column">ask me about my <span id="organ">heart</span></h3>
-            <p class="text-center column" id="info">Hearts donated for heart valves repair birth defects in children and others.</p>
+            <h3 class="text-left column">ask me about my <span id="organ">heart</span></h3>
+            <p class="float-left text-left small-3 small-push-1 column" id="info">Hearts donated for heart valves repair birth defects in children and others.</p>
         </div>
         <div class="text-center column">
             <svg version="1.1" id="anatomyguy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
@@ -1269,74 +1432,18 @@
         <h2 class="hidden">Every 3 days someone dies waiting for an organ</h2>
         <div class="row expanded collapse">
             <h3 class="small-6 float-left column">Every 3 days someone <span>dies</span> waiting for a <span>critical</span> donation</h3>
-            <div class="heart-svg small-5 float-right column"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{fill:none;stroke:#ED1C24;stroke-width:5;stroke-miterlimit:10;}
-</style>
-<path id="heart" class="st0" d="M144,15.3c-17.9,0-33.8,8.4-44,21.5c-10.2-13-26.1-21.5-44-21.5c-30.9,0-56,25.1-56,56
-	c-0.4,26.3,16,58.9,100,116.5c71.8-45.1,99.7-83.1,100-116.5C200,40.4,174.9,15.3,144,15.3z"/>
-<line id="flatline" class="st1" x1="0" y1="95.3" x2="200" y2="95.3"/>
-<path id="ekg" class="st1" d="M0.3,95c18.6,0.1,37.1,0.2,55.7,0.3l10.7,21.3l23-58.7l20.7,95L134,80l4.7,16.3h52.7h8.7"/>
-</svg></div>
-
-            <!-- ekg -->
-            <!-- <div class="ekg-svg"> --><!-- 
-
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 			viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
-			<style type="text/css">
-                        .st00000 {
-                            fill: none;
-                            stroke: #ffffff;
-                            stroke-width: 5;
-                            stroke-miterlimit: 10;
-                        }
-                 </style>
-			<path class="st00000" id="line" d="M2.7,256.7c115.9,0,231.9,0,347.8,0l36-67.1l55.9,138.5l75.8-226.7l54,178.3l24.2-24.2h361.5"/>
-
-            <path class="st00000" id="flatline" d="M15.1,243.6c108.3,0,216.7,0,325,0c65.4,0,130.8,0,196.1,0c41.6,0,83.2,0,124.8,0c60.5,0,120.9,0,181.4,0h99.4
-                C941.8,243.6,15.1,243.6,15.1,243.6z"/>
-			</svg>
- -->
-
-            	<!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 			viewBox="-466.4 259.6 280.2 47.3" enable-background="new -466.4 259.6 280.2 47.3" xml:space="preserve">
-	 			 <style type="text/css">
-                        .st00000 {
-                            fill: none;
-                            stroke: #ffffff;
-                            stroke-width: 5;
-                            stroke-miterlimit: 10;
-                        }
-                 </style> 
-				<polyline id="line" class="st00000" points="-465.4,281 
-	-436,281 -435.3,280.6 -431.5,275.2 -426.9,281 -418.9,281 -423.9,281 -363.2,281 -355.2,269 -345.2,303 -335.2,263 -325.2,291 
-	-319.2,281 -187.2,281 "/>
-				</svg> -->
+            <div class="heart-svg small-4 float-right column"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+    <style type="text/css">
+        .st3{fill:#FFFFFF;}
+        .st4{fill:none;stroke:#ED1C24;stroke-width:5;stroke-miterlimit:10;}
+    </style>
+    <path id="heartekg" class="st3" d="M144,15.3c-17.9,0-33.8,8.4-44,21.5c-10.2-13-26.1-21.5-44-21.5c-30.9,0-56,25.1-56,56
+        c-0.4,26.3,16,58.9,100,116.5c71.8-45.1,99.7-83.1,100-116.5C200,40.4,174.9,15.3,144,15.3z"/>
+    <line id="flatline" class="st4" x1="0" y1="95.3" x2="200" y2="95.3"/>
+    <path id="ekg" class="st4" d="M0.3,95c18.6,0.1,37.1,0.2,55.7,0.3l10.7,21.3l23-58.7l20.7,95L134,80l4.7,16.3h52.7h8.7"/>
+    </svg></div>
 
 
-
-
-                <!-- <svg version="1.1" id="ekg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 884 200" style="enable-background:new 0 0 884 200;"
-                    xml:space="preserve">
-                    <style type="text/css">
-                        .st00000 {
-                            fill: none;
-                            stroke: #ffffff;
-                            stroke-width: 5;
-                            stroke-miterlimit: 10;
-                        }
-                    </style> <polyline id="line" class="st00000" points="885.2,97.4 840.5,97.4 834.4,127 828.9,65.5 820.8,97.4 814,87.3 807.9,97.4 778.8,97.4
-            			806.6,97.4 761.8,97.4 755.7,127 750.3,65.5 742.2,97.4 735.4,87.3 729.3,97.4 700.1,97.4 728.3,97.4 683.5,97.4 677.4,127
-            			672,65.5 663.9,97.4 657.1,87.3 651,97.4 621.8,97.4 573.9,97.4 574.2,97.4 529.5,97.4 523.4,127 517.9,65.5 509.8,97.4 503,87.3
-            			496.9,97.4 467.8,97.4 495.6,97.4 450.8,97.4 444.7,127 439.3,65.5 431.2,97.4 424.4,87.3 418.3,97.4 389.1,97.4 417.3,97.4
-            			372.5,97.4 366.4,127 361,65.5 352.9,97.4 346.1,87.3 340,97.4 310.8,97.4 262.9,97.4 218.1,97.4 212,127 206.6,65.5 198.5,97.4
-            			191.7,87.3 185.6,97.4 156.4,97.4 184.2,97.4 139.5,97.4 133.4,127 128,65.5 119.8,97.4 113.1,87.3 107,97.4 77.8,97.4
-            			105.9,97.4 61.2,97.4 55.1,127 49.7,65.5 41.5,97.4 34.8,87.3 28.7,97.4 -0.5,97.4 		" />
-                    </svg> -->
-            <!-- </div> -->
         </div>
     </section>
 
@@ -1358,22 +1465,36 @@
 
     <footer>
         <h2 class="hidden">doc outline title</h2>
-        <div>
-
-        <a href="admin/index.php">Are you an admin? Click Here!</a>
-
+        <div class="">
+            <div class="footer-block text-center grey-bg">
+                <h3>step 1</h3>
+                <p>Register to be a donor <a href="http://www.beadonor.ca">here</a></p>
+            </div>
+            <div class="footer-block text-center grey-bg">
+                <h3>step 2</h3>
+                <p>Tell your loved ones about it.</p>
+            </div>
+            <a id="share" href="javascript:void(0)">
+            <div class="footer-block text-center grey-bg">
+                <h3>step 3</h3>
+                <p>Click here to help us spread the word.</p>
+            </div>
+            </a>
         </div>
     </footer>
 
     <script src="js/map.js"></script>
-    <script src="js/circleAnim.js"></script>
+    <script src="js/circleAnimate.js"></script>
+    <script src="js/panel.js"></script>
     <!-- <script src="js/ekg.js"></script> -->
     <script src="js/anatomy.js"></script>
     <script src="js/eight.js"></script>
     <script src="js/counter.js"></script>
+    <script src="js/share.js"></script>
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 
 </html>

@@ -19,7 +19,7 @@
 	function editUsers($id,$fname,$lname,$username,$email,$level,$suspend,$delete){
 		include("connect.php");
 
-		date_default_timezone_set('America/toronto');
+		date_default_timezone_set('America/Detroit');
 		$date = new dateTime();
 		$properDate = $date -> format('Y-m-d H:i:s');
 
@@ -34,14 +34,15 @@
 
 			$updateString = "UPDATE tbl_user SET user_fname = '{$fname}', user_lname='{$lname}', user_uname ='{$username}', user_email = '{$email}', user_level = '{$level}', user_suspend = 'no', user_attempts = '0', user_create_date = '$properDate' WHERE user_id = '{$id}'";
 			$updateQuery = mysqli_query($link,$updateString);
+		}else{
 
 			$updateString = "UPDATE tbl_user SET user_fname = '{$fname}', user_lname='{$lname}', user_uname ='{$username}', user_email = '{$email}', user_level = '{$level}' WHERE user_id = '{$id}'";
 			$updateQuery = mysqli_query($link,$updateString);
 
 		}
 
-		if($updateQuery){
-			redirect_to('admin_index.php');
+		if($updateQuery || $updateDeleteQuery){
+			redirect_to('admin_editusers.php');
 		}else{
 			$message = "Not gonna happen";
 			return $message;
@@ -94,6 +95,8 @@
 
 		$randomPassword = bin2hex(openssl_random_pseudo_bytes(5));
 
+		$header = "From: Organ Donation Ontario<jeanp162@hp192.hostpapa.com>";
+
 		$ip = 0 ;
 
 		//added values to the user_edited and user_created_date columns
@@ -102,16 +105,16 @@
 		$checkUser = "SELECT user_id FROM tbl_user WHERE user_uname = '{$username}'";
 
 		//changed message to better reflect what is going on
-		$body = "Your user name is: {$username}\n\n Your password is: {$randomPassword}\n\n To login please follow this link:  \n\n You will need to change your password the first time you login. For security mesures, you will be given 24 hours to login and change your password. If you do not, your account will be suspended and you will need to contact an admin.";
+		$body = "Your user name is: {$username}\n\n Your password is: {$randomPassword}\n\n To login please follow this link: https://goo.gl/55YYKC \n\n You will need to change your password the first time you login. For security mesures, you will be given 24 hours to login and change your password. If you do not, your account will be suspended and you will need to contact an admin.";
 
 		//echo $userString;
 
 		$userquery = mysqli_query($link,$userstring);
 
 		if(isset($userquery)){
-			mail('{$email}', "Here's your username and password for your company login.",$body);
+			mail($email, "Here's your username and password for your company login.",$body,$header);
 			// echo $body;
-			$message = "User was added";
+			$message = "<h2 class=\"roboto blackH2Red\">User was added</h2>";
 			return $message;
 		}else{
 			$message = "There was an error adding the user to the database.";
